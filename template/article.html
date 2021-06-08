@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <style>
+        .container {
+            width:100%;
+        }
+        header {
+            background-color: #F4F6B0;
+            height: 80px;
+            color: black;
+        }
+        @media all and (min-width: 992px) {
+            .navbar .nav-item .dropdown-menu{ display: none; }
+            .navbar .nav-item:hover .nav-link{   }
+            .navbar .nav-item:hover .dropdown-menu{ display: block; }
+            .navbar .nav-item .dropdown-menu{ margin-top:0; }
+        }
+        a {
+            color: rgb(58, 58, 58);
+        }
+        a:hover {
+            color: black;
+        }
+
+        nav {
+            background-color: #e5ddb6;
+        }
+        article {
+            background-color: #e5ddb7;
+            padding: 50px;
+        }
+
+        footer {
+            background-color: #8E8E8E;
+            height: 80px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding-top: 3px;
+            font-size: 10px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="row align-items-center">
+                <div class = "col-8">
+                    <img src="../img/校徽01.png" class="img-thumbnail" alt="..." style="width: auto; max-height: 80px;">
+                </div>
+                <div class = "col-1">
+                    返回首頁
+                </div>
+                <div class = "col-1">
+                    網站導覽
+                </div>
+                <div class = "col-1">
+                    常見問答
+                </div>
+                <div class = "col-1">
+                    意見信箱
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-dar" style=" background-color : #F4F6B0">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">嘉義大學食品科學系</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="main_nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  關於食科  </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"> 系學會 </a></li>
+                                    <li><a class="dropdown-item" href="#"> 系友會 </a></li>
+                                    <li><a class="dropdown-item" href="#"> 必修科目冊 </a></li>
+                                    <li><a class="dropdown-item" href="#"> 榮譽榜 </a></li>
+                                    <li><a class="dropdown-item" href="#"> 師資陣容 </a></li>
+                                    <li><a class="dropdown-item" href="#"> 系所簡介 </a></li>
+                                    <li><a class="dropdown-item" href="#"> 活動花絮 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  學生專區  </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"> 新生專欄 </a></li>
+                                    <li><a class="dropdown-item" href="#"> 入學管道 </a></li>
+                                    <li><a class="dropdown-item" href="#"> 跨領域學程 </a></li>
+                                    <li><a class="dropdown-item" href="#"> 實習專區 </a></li>
+                                    <li><a class="dropdown-item" href="#"> 獎學金專區 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  系所公告  </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"> 會議記錄 </a></li>
+                                    <li><a class="dropdown-item" href="#"> 專題演講 </a></li>
+                                    <li><a class="dropdown-item" href="#"> 法規彙編 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#"> 	國際交流 </a></li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                              </form>
+                        </ul>
+                        </div> <!-- navbar-collapse.// -->
+                    </div> <!-- container-fluid.// -->
+                    </nav>
+                </div>
+    
+            </div>
+            <div class="row align-items-center" style="padding: 10px;">
+                <div class="col-6">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">主頁</a></li>
+                          <li class="breadcrumb-item"><a href="#">關於食科</a></li>
+                          <li class="breadcrumb-item"><a href="#">榮譽榜</a></li>
+                        </ol>
+                      </nav>
+                </div>
+
+                <div class="col-6" style="text-align: right;">                    
+                    發佈日期：2020-12-12
+                </div>
+            </div>
+        </nav>
+
+        <article>
+            <div class="row">
+                <div class="col-12">
+                    <h1>
+                        2020 台灣食品產業創新產品競賽榮獲第二名
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <br>主辦單位：台灣食品科學技術學會
+
+                    <br>參賽作品：十爆ㄇㄨㄟˊ即食粥          
+
+                    <br>參賽學生：劉中翔、施俊國、鍾佳諼、林弘軒
+
+                    <br>指導老師：張文昌老師          
+
+                    <br>榮獲成績：第二名
+                    <br>
+                    <br>活動說明：係由「財團法人謝成源先生食品科技發展基金會」贊助， 台灣食品科學技術學會 為主辦單位，為鼓勵大專院校食品科學相關科系所學生，以在校內外所學到之實務經驗，將文化創意融入於產品開發中，特推動食品創意實作競賽已歷數年，承蒙各校師學熱烈參與，頗獲好評。本年度活動以開發符合高齡消費族群需求，並具台灣本土特色之加工食品為主題，開發之產品，須以能在工廠加工量產、彰顯可口、美味及健康，符合食品安全與生理機能需求之新配方、新造型、新口味、新包或新的消費飲用方式為重點。
+                </div>
+            </div>
+
+        </article>
+        
+        <footer>
+            <div class="row align-items-center">
+                <div class="col-12">
+                    國立嘉義大學　版權所有　Copyright © 2017 All Rights Reserved.
+                    <br>國立嘉義大學生命科學院食品科學系
+                    <br>地址：嘉義市學府路300號
+                    <br>電話:05-2717591~2；傳真：05-2717596
+                    <br>歡迎來信：fst@mail.ncyu.edu.tw
+
+
+                </div>
+            </div>
+        </footer>
+        
+
+
+
+    </div>
+</body>
+</html>
