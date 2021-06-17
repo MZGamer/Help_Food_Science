@@ -1,0 +1,104 @@
+
+        body{
+            background-color: rgba(238, 238, 238, 0.326);
+        }
+        #whole{
+            background-color: rgba(238, 238, 238, 0.326);
+        }
+        .container{
+            width: 100%;
+        }
+
+        #Start
+        {
+            display: none;
+            position: absolute;
+            z-index: 10;
+            width: 90%;
+            height: auto;
+            border: 0px;
+            right: 5%;
+            background-color: rgba(238, 238, 238, 0.326);
+        }
+        
+
+        .returnHome a:hover{
+            background-color: rgba(162, 180, 180, 0.576);
+            border: none;
+        }
+        .webGuide a:hover{
+            background-color: rgba(162, 180, 180, 0.576);
+            border: none;
+        }
+        .commentQA a:hover{
+            background-color: rgba(162, 180, 180, 0.576);
+            border: 0px;
+        }
+        .comment_mail a:hover{
+            background-color: rgba(162, 180, 180, 0.576);
+            border: none;
+        }
+
+        header{
+            background-color: rgba(240, 240, 240, 0.521);
+            font-family: Microsoft JhengHei;
+        }
+
+        footer{
+            background-color: #8E8E8E;
+            height: auto;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 15px;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: Microsoft JhengHei;
+        }
+
+        @media all and (min-width: 992px) {
+            .navbar .nav-item .dropdown-menu{ display: none;}
+            .navbar .nav-item .nav-link{color: rgb(0, 0, 0);font-size: 100%;}
+            .navbar .nav-item:hover .nav-link{ color: rgba(12, 95, 128, 0.91); }
+            .navbar .nav-item:hover .dropdown-menu{ display: block; }
+            .navbar .nav-item .dropdown-menu{ margin-top:0; }
+        }
+        
+        #homeCarousel{
+            width: 80%;
+        }
+        #homeCarousel a{color: rgb(255, 255, 255);}
+        #homeCarousel a:hover{color: rgb(237, 243, 61);}
+
+        .news_img{
+            width: 25px;
+            position: relative;
+            text-align: center;
+        }
+        
+        #carouselAndNews{
+            padding: 1% 0% 1% 0%;
+            height: 450px;
+        }
+
+        
+        
+        tr:nth-child(even) {
+            background-color: rgba(255, 242, 100, 0.528);
+            }
+
+        #table1 a:hover , #table1 a{
+            color: black;
+            text-decoration: none;
+        }
+        #table2 a:hover , #table2 a{
+            color: black;
+            text-decoration: none;
+        }
+        #table3 a:hover , #table3 a{
+            color: black;
+            text-decoration: none;
+        }
+        #table4 a:hover , #table4 a{
+            color: black;
+            text-decoration: none;
+        }
