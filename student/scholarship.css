@@ -9,19 +9,6 @@
             width: 100%;
         }
 
-        #Start
-        {
-            display: none;
-            position: absolute;
-            z-index: 10;
-            width: 90%;
-            height: auto;
-            border: 0px;
-            right: 5%;
-            background-color: rgba(238, 238, 238, 0.326);
-        }
-        
-
         .returnHome a:hover{
             background-color: rgba(162, 180, 180, 0.576);
             border: none;
@@ -62,43 +49,22 @@
             .navbar .nav-item:hover .dropdown-menu{ display: block; }
             .navbar .nav-item .dropdown-menu{ margin-top:0; }
         }
-        
-        #homeCarousel{
-            width: 80%;
-        }
-        #homeCarousel a{color: rgb(255, 255, 255);}
-        #homeCarousel a:hover{color: rgb(237, 243, 61);}
 
-        .news_img{
-            width: 25px;
-            position: relative;
-            text-align: center;
-        }
-        
-        #carouselAndNews{
-            padding: 1% 0% 1% 0%;
-            height: 450px;
-        }
-
-        
-        
         tr:nth-child(even) {
             background-color: rgba(255, 242, 100, 0.528);
-            }
+        }
 
-        #table1 a:hover , #table1 a{
-            color: black;
-            text-decoration: none;
+        .jumbotron {
+            background-image: url("https://images.unsplash.com/photo-1495653797063-114787b77b23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+            opacity: 0.5; 
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 300px;
+            background-position: 50%;
+            width: 100%;
+            padding-bottom: 0%;
         }
-        #table2 a:hover , #table2 a{
-            color: black;
-            text-decoration: none;
-        }
-        #table3 a:hover , #table3 a{
-            color: black;
-            text-decoration: none;
-        }
-        #table4 a:hover , #table4 a{
-            color: black;
-            text-decoration: none;
+        #text_area{
+            color: rgb(255, 0, 0);
+            font-size: 80px;
         }
