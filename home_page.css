@@ -84,7 +84,7 @@
         
         tr:nth-child(even) {
             background-color: rgba(255, 242, 100, 0.528);
-            }
+        }
 
         #table1 a:hover , #table1 a{
             color: black;

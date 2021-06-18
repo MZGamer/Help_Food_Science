@@ -1,0 +1,69 @@
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.accordion-collapse {
+  background-color: rgba(240, 240, 240, 0.521);
+}
+
+.accordion-button :nth-child(2) {
+    background-color: rgba(255, 242, 100, 0.528);
+}
+
+.accordion-button {
+    background-color: rgba(212, 212, 212, 0.493);
+  }
+
+.table thead th{
+  background-color: rgba(212, 212, 212, 0.493);
+}
+
+body{
+    background-color: rgba(238, 238, 238, 0.326);
+}
+
+.container{
+    width: 100%;
+}
+
+header{
+    background-color: rgba(240, 240, 240, 0.521);
+    font-family: Microsoft JhengHei;
+}
+
+footer{
+    background-color: #8E8E8E;
+    height: auto;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+    line-height: 25px;
+    font-family: Microsoft JhengHei;
+}
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu{ display: none;}
+    .navbar .nav-item .nav-link{color: rgb(0, 0, 0);font-size: 100%;}
+    .navbar .nav-item:hover .nav-link{ color: rgba(12, 95, 128, 0.91); }
+    .navbar .nav-item:hover .dropdown-menu{ display: block; }
+    .navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 242, 100, 0.528);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(168, 168, 168);
+}
+
+article {
+    text-align: center;
+    padding: 50px;
+}

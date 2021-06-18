@@ -4,47 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <style>
-        .container {
-            width:100%;
-            
-        }
-        header {
-            background-color: #F4F6B0;
-            height: 80px;
-            color: black;
-        }
-        @media all and (min-width: 992px) {
-            .navbar .nav-item .dropdown-menu{ display: none; }
-
-            .navbar .nav-item:hover .dropdown-menu{ display: block; }
-            .navbar .nav-item .dropdown-menu{ margin-top:0; }
-        }
-        a {
-            color: rgb(58, 58, 58);
-        }
-        a:hover {
-            color: black;
-        }
-
-        nav {
-            background-color: #e5ddb6;
-        }
-        article {
-            background-color: #e5ddb7;
-            padding: 50px;
-        }
-
-        footer {
-            background-color: #8E8E8E;
-            height: 100px;
-            color: rgb(255, 255, 255);
-            text-align: center;
-            padding-top: 5px;
-            font-size: 10px;
-        }
-    </style>
+    <link href="../style.css" rel="stylesheet">
     <title>系所簡介-嘉義大學食科系</title>
 </head>
 <body>
@@ -81,7 +43,12 @@
                         <div class="collapse navbar-collapse" id="main_nav">
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  關於食科  </a>
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16 ">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                  </svg>  <b id="aboutDepartment">關於食科</b> </a>
+
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#"> 系所簡介 </a></li>
                                     <li><a class="dropdown-item" href="./Teacher/index.html"> 師資陣容 </a></li>
@@ -93,24 +60,27 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  學生專區  </a>
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-graduation-cap"></i> <b> 學生專區 </b> </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> 新生專欄 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 入學管道 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 跨領域學程 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 實習專區 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 獎學金專區 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 新生專欄 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 入學管道 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 跨領域學程 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 實習專區 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 獎學金專區 </a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  系所公告  </a>
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 14 14">
+                                    <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z"/>
+                                  </svg>  <b>系所公告</b>  </a>
+
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> 會議記錄 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 專題演講 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 法規彙編 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 會議記錄 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 專題演講 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 法規彙編 </a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="#"> 	國際交流 </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" target="_blank"><i class="fas fa-globe"></i> <b>	國際交流 </b> </a></li>
                         </ul>
                         <ul class="navbar-nav ms-auto">
                             <form class="d-flex">
@@ -190,12 +160,82 @@
                     <img src="./img/book.webp" alt="" height="125px" style="padding-bottom: 20px;">
                     <p><strong>著重基礎能力</strong></p>
                 </div>
-                <div class="col-12" style="padding-top: 40px;">
-                    <br>本系採理論與實務並重原則，著重基礎能力，並加強食品工業專業知識與技術之傳授，以培養食品專業人才。
-                    <br>
-                    <br>其教育特色以培養兼具食品科學理論專業知識與實用技能之人才，以擔負食品製造、管理、創新、企劃等之實務及研發能力，以期為食品工業界提供專才，促進經濟發展。在實際教學上，採理論與實務並重原則，著重基礎能力，並加強食品工業專業知識與技術之傳授。另加以品德倫理觀念之灌輸，培育具有專業知識及敬業精神的中堅幹部。 食品科技為民生工業最重要的一環，營養豐富且安全衛生的食品是促進且保障國人健康的屏障，達到此種目標需要食品科技人才不斷的貢獻心力，本系的教育目標即在培育國力維繫及國家發展不可或缺的食品科技人才。配合科技發展與國家社會之需求，除了傳統的食品加工與研究外，本系也強化在食品生技、健康食品、慢性病預防食品等新興項目之研究與開發。
-                    <br>
-                    <br>食品科技是需要結合學術理論與實際應用的一個學門，本系學生需要先接受完整的一般基礎學科訓練，此類課程包括微積分、物理、有機化學、分析化學、生物化學、微生物學等課程。專業基礎課程則包括食品化學、食品微生物、營養學、食品工程、食品單元操作等課程。本系實用課程包括有罐頭製造學、食品脫水學、食品冷凍學、食品原料學、食品添加物、蔬果加工、畜產加工、穀類加工、發酵學等課程。本系最突出的特色在於實用課程均配合實驗或實習，以強化理論與實務之結合。
+
+                <div class="row">
+                    <div class="col" id="table1">
+                        <table>
+                            <tr>
+                                <td style="width: 50%; line-height:45px ;">
+                                    <center><h2><b>理論與實作並重</b></h2>
+                                    <p style="font-size: larger;">本系採理論與實務並重原則
+                                        <br>除了在教室學習外，更透過校內外活動的方式提供實作機會
+                                        <br>以增進系所學生的實力
+                                    </p></center>
+                                </td>
+                                <td style="width: 50%;"><img src="img/Analysis-cuate.png" style="width: 90%; height: auto;"></td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" id="table2">
+                        <table>
+                            <tr>
+                                <td style="width: 50%;"><center><img src="img/Craft beer manufacturing-bro.png" style="width: 90%; height: auto;"></center></td>
+                                <td style="width: 50%; line-height:45px ;">
+                                    <center><h2><b>傳授工業專業知識與技術</b></h2>
+                                    <p style="font-size: larger;"> 
+                                        本系期許培養兼具食品科學理論專業知識與實用技能之人才<br>
+                                        以擔負食品製造、管理、創新、企劃等之實務及研發能力<br>
+                                        以期為食品工業界提供專才
+                                    </p></center>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                        
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" id="table1">
+                        <table>
+                            <tr>
+                                <td style="width: 50%; line-height:45px ;">
+                                    <center><h2><b>灌輸品德倫理觀念</b></h2>
+                                    <p style="font-size: larger;">食品科技為民生工業最重要的一環
+                                        <br>營養豐富且安全衛生的食品是促進且保障國人健康的屏障
+                                        <br>在現今食安問題愈加嚴重的當下
+                                        <br>品德教育更加不容忽視
+                                    </p></center>
+                                </td>
+                                <td style="width: 50%;"><img src="img/Good team-pana.png" style="width: 90%; height: auto;"></td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" id="table2">
+                        <table>
+                            <tr>
+                                <td style="width: 50%;"><center><img src="img/Studying-amico.png" style="width: 90%; height: auto;"></center></td>
+                                <td style="width: 50%; line-height:45px ;">
+                                    <center><h2><b>著重基礎能力</b></h2>
+                                    <p style="font-size: larger;"> 
+                                        食品科技是需要結合學術理論與實際應用的一個學門
+                                        <br>本系學生需要先接受完整的一般基礎學科訓練
+                                        <br>為未來課程打好堅固的地基
+                                    </p></center>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                        
+                    </div>
                 </div>
             </div>
 
@@ -233,69 +273,143 @@
                     <h1>未來發展方向</h1>
                 </div>
                 <div class="col-12">
-                    <img src="./img/futureLife.webp" alt="" height="125px" style="padding-bottom: 20px;">
-                    <p><strong>生涯發展</strong></p>
+                    <img src="./img/Moving forward-amico.png" alt="" width="20%" style="padding-bottom: 20px;">
+                    <p><h3>生涯發展</h3></p>
                 </div>
-                <div class="col-6">
-                    <img src="./img/study.webp" alt="" height="125px" style="padding-bottom: 20px;">
-                    <p><strong>繼續升學</strong></p>
+            </div>
+            <div class="row">
+                <div class="col" id="table1">
+                    <table>
+                        <tr>
+                            <td style="width: 50%; line-height:45px ;">
+                                <center><h2><b>繼續升學</b></h2>
+                                <p style="font-size: larger;">
+                                    <br>
+                                    <br>本系畢業生可選擇報考進入本校、台大及中興等國內外大學等生命科學相關研究所修習碩、博班 ，取得更高等之學位。
+                                    <br>
+                                </p></center>
+                            </td>
+                            <td style="width: 50%;"><img src="img/In progress-pana.png" style="width: 90%; height: auto;"></td>
+                        </tr>
+                    </table>
+                    
                 </div>
-                <div class="col-6">
-                    <img src="./img/workjob.webp" alt="" height="125px" style="padding-bottom: 20px;">
-                    <p><strong>進入職場</strong> </p>
-                </div>
-                <div class="col-12" style="text-align: left; padding-top: 20px;">
-                    <br>1. 升學方面：
-                    <br>
-                    <br>本系畢業生可選擇報考進入本校、台大及中興等國內外大學等生命科學相關研究所修習碩、博班 ，取得更高等之學位。
-                    <br>
-                    <br>2. 就業方面：
-                    <br>
-                    <br>    （1） 可參與國家考試，就業於政府行政部門、技術輔導及研究部門。
-                    <br>
-                    <br>    （2） 國內外公私立之研究或產業研究機構或食品工業等民間企業。
-                    <br>
-                    <br>    （3） 在學期間報考並完成本校中等師資培育課程，取得教師資格。
-                    <br>
-                    <br>    （4） 可就業相關農會、台糖畜殖場、牧場、加工廠、食品廠、飼料廠、添加物及相關私人或法人機構。
-                    <br>
-                    <br>    （5）自行創業。
-                </div>
+            </div>
 
+            <div class="row">
+                <div class="col" id="table2">
+                    <table>
+                        <tr>
+                            <td style="width: 50%;"><center><img src="img/Job offers-rafiki.png" style="width: 90%; height: auto;"></center></td>
+                            <td style="width: 50%; line-height:45px ;">
+                                <center><h2><b>進入職場</b></h2>
+                                <p style="font-size:medium;"> 
+                                    <br>    （1） 可參與國家考試，就業於政府行政部門、技術輔導及研究部門。
+                                    <br>    （2） 國內外公私立之研究或產業研究機構或食品工業等民間企業。
+                                    <br>    （3） 在學期間報考並完成本校中等師資培育課程，取得教師資格。
+                                    <br>    （4） 可就業相關農會、台糖畜殖場、牧場、加工廠、食品廠、飼料廠、添加物及相關私人或法人機構。
+                                    <br>    （5）自行創業。
+                                </p></center>
+                            </td>
+                            
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div>
+            <div class="row align-items-center" style="text-align: center;">
                 <div class="col-12" style="padding-top: 20px">
-                    <img src="./img/future.png" alt="" height="125px" style="padding-bottom: 20px;">
-                    <p><strong>系所展望</strong></p>
+                    <img src="./img/Developer activity-amico.png" alt="" width="20%" style="padding-bottom: 20px;">
+                    <p><h3>系所展望</h3></p>
                 </div>
-                <div class="col-6">
-                    <img src="./img/communicate.png" alt="" height="125px" style="padding-bottom: 20px;">
-                    <p><strong>鼓勵交流</strong></p>
+                <div class="row">
+                    <div class="col" id="table1">
+                        <table>
+                            <tr>
+                                <td style="width: 50%; line-height:45px ;">
+                                    <center><h2><b>鼓勵交流</b></h2>
+                                    <p style="font-size: larger;">
+                                        鼓勵現職教師至國內外大學或研究機構進行學術交流
+                                        <br>增聘學有專長產學界人士至本所開課。
+                                    </p></center>
+                                </td>
+                                <td style="width: 50%;"><img src="img/Contact us-rafiki.png" style="width: 90%; height: auto;"></td>
+                            </tr>
+                        </table>
+                        
+                    </div>
                 </div>
-                <div class="col-6">
-                    <img src="./img/project.webp" alt="" height="125px" style="padding-bottom: 20px;">
-                    <p><strong>建立研究計畫</strong> </p>
+    
+                <div class="row">
+                    <div class="col" id="table2">
+                        <table>
+                            <tr>
+                                <td style="width: 50%;"><center><img src="img/Medical research-rafiki.png" style="width: 90%; height: auto;"></center></td>
+                                <td style="width: 50%; line-height:45px ;">
+                                    <center><h2><b>建立研究計畫</b></h2>
+                                    <p style="font-size:larger;"> 
+                                        鼓勵不同專長老師互相配合建立研究團隊
+                                        <br>研擬大型整合研究計畫，爭取研究經費
+                                    </p></center>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                        
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="./img/new equip.png" alt="" height="125px" style="padding-bottom: 20px;">
-                    <p><strong>持續增添設備</strong></p>
+                <div class="row">
+                    <div class="col" id="table1">
+                        <table>
+                            <tr>
+                                <td style="width: 50%; line-height:45px ;">
+                                    <center><h2><b>持續增添設備</b></h2>
+                                    <p style="font-size: larger;">
+                                        持續增添最先進之教學研究設備，確保研究品質。
+                                    </p></center>
+                                </td>
+                                <td style="width: 50%;"><img src="img/Upgrade-rafiki.png" style="width: 90%; height: auto;"></td>
+                            </tr>
+                        </table>
+                        
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="./img/Cooperation.webp" alt="" height="125px" style="padding-bottom: 20px;">
-                    <p><strong>產學合作</strong> </p>
+    
+                <div class="row">
+                    <div class="col" id="table2">
+                        <table>
+                            <tr>
+                                <td style="width: 50%;"><center><img src="img/Supermarket workers-amico.png" style="width: 90%; height: auto;"></center></td>
+                                <td style="width: 50%; line-height:45px ;">
+                                    <center><h2><b>產學合作</b></h2>
+                                    <p style="font-size:larger;"> 
+                                        持續推動產學合作，結合產業界加強推廣輔導
+                                        <br>以達學術界與產　業界相得益彰之效，加速食品工業之發展。
+                                    </p></center>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                        
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="./img/presentation.png" alt="" height="125px" style="padding-bottom: 20px;">
-                    <p><strong>鼓勵學術活動</strong> </p>
-                </div>
-                <div class="col-12" style="text-align: left; padding-top: 20px;">
-                    <br>1. 在改善教學方面，鼓勵現職教師至國內外大學或研究機構進行學術交流；增聘學有專長產學界人士至本所開課。
-                    <br>
-                    <br>2. 在提昇研究競爭力方面，鼓勵不同專長老師互相配合建立研究團隊，研擬大型整合研究計畫，爭取研究經費。
-                    <br>
-                    <br>3. 持續增添最先進之教學研究設備，確保研究品質。
-                    <br>
-                    <br>4. 持續推動產學合作，結合產業界加強推廣輔導，以達學術界與產　業界相得益彰之效，加速食品工業之發展。
-                    <br>
-                    <br>5. 鼓勵教師參加學術活動並發表研究成果，並積極爭取主辦國內、　國際性學術研討會，以提高學術水準。
+                <div class="row">
+                    <div class="col" id="table1">
+                        <table>
+                            <tr>
+                                <td style="width: 50%; line-height:45px ;">
+                                    <center><h2><b>鼓勵學術活動</b></h2>
+                                    <p style="font-size: larger;">
+                                        鼓勵教師參加學術活動並發表研究成果
+                                        <br>並積極爭取主辦國內、國際性學術研討會
+                                        <br>以提高學術水準。
+                                    </p></center>
+                                </td>
+                                <td style="width: 50%;"><img src="img/Conference-pana.png" style="width: 90%; height: auto;"></td>
+                            </tr>
+                        </table>
+                        
+                    </div>
                 </div>
             </div>
 
@@ -364,13 +478,21 @@
         
         <footer>
             <div class="row align-items-center">
-                <div class="col-12">
-                    國立嘉義大學　版權所有　Copyright © 2017 All Rights Reserved.
-                    <br>國立嘉義大學生命科學院食品科學系
-                    <br>地址：嘉義市學府路300號
-                    <br>電話:05-2717591~2；傳真：05-2717596
-                    <br>歡迎來信：fst@mail.ncyu.edu.tw
-                </div>
+              <div class="col-12">
+                國立嘉義大學　版權所有　Copyright © 2017 All Rights Reserved.
+
+                <br>國立嘉義大學生命科學院食品科學系
+
+                <br><i class="fas fa-map-marker-alt"></i> 地址：嘉義市學府路300號
+
+                <br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 18 18">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg> 電話：05-2717591~2 &nbsp; <i class="fas fa-fax"></i> 傳真：05-2717596
+                
+                <br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 18 18">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                  </svg>&nbsp;歡迎來信 : fst@mail.ncyu.edu.tw
+            </div>
             </div>
         </footer>
         
