@@ -55,35 +55,36 @@
         }
 
         .jumbotron {
-            background-image: url("https://images.unsplash.com/photo-1558021212-51b6ecfa0db9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHN0dWRlbnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
-            opacity: 0.6; 
+            background-image: url("../img/freshman.jfif");
+            opacity: 0.9    ; 
             background-size: cover;
             background-repeat: no-repeat;
-            height: 300px;
+            height: 350px;
             background-position: 0%;
             width: 100%;
         }
         #text_area{
-            color: rgb(28, 85, 217);
+            color: rgb(255, 255, 255);
             font-size: 80px;
-            text-align: right;
+            text-align: center;
         }
 
-        div #class_news , div #apply_point , div #class_design , div #download_sheet{
-            width:280px;height:280px; 
+        div #first , div #second , div #third , div #forth , div #fifth , div #sixth{
+            width:200px;height:200px; 
 
             border-radius:999em;
 
-            background-color:rgba(185, 180, 180, 0.979);
-
             border: 0px;
-
         }
-        div #class_news:hover , div #apply_point:hover , 
-        div #class_design:hover , div #download_sheet:hover{
+        div #first p, div #second p, div #third p, div #forth p, div #fifth p, div #sixth p{
+                padding-top: 80px;
+                
+                color: rgb(255, 255, 255);
+        }
+        a:link{
+            text-decoration: none;
+        }
+        div #first:hover , div #second:hover , div #third:hover , div #forth:hover , div #fifth:hover , div #sixth:hover{
+            text-decoration: none;
             opacity: 0.7;
         }
-        div #apply_point:hover{color: rgb(255, 90, 123);}
-        div #class_design:hover{color: rgb(202, 191, 32);}
-        div #class_news:hover{color: rgb(17, 197, 113);}
-        div #download_sheet:hover{color: rgb(14, 81, 238);}
