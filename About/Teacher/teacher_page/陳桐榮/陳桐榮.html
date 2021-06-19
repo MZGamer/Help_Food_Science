@@ -4,44 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="../../../../style.css" rel="stylesheet">
     <style>
-        .container {
-            width:100%;
-        }
-        header {
-            background-color: #F4F6B0;
-            height: 80px;
-            color: black;
-        }
-        @media all and (min-width: 992px) {
-            .navbar .nav-item .dropdown-menu{ display: none; }
-
-            .navbar .nav-item:hover .dropdown-menu{ display: block; }
-            .navbar .nav-item .dropdown-menu{ margin-top:0; }
-        }
-        a {
-            color: rgb(58, 58, 58);
-        }
-        a:hover {
-            color: black;
-        }
-
-        nav {
-            background-color: #e5ddb6;
-        }
-        article {
-            background-color: #e5ddb7;
-            padding: 50px;
-        }
-
-        footer {
-            background-color: #8E8E8E;
-            height: 100px;
-            color: rgb(255, 255, 255);
-            text-align: center;
-            padding-top: 5px;
-            font-size: 10px;
+        td {
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
     </style>
     <title>師資陣容-嘉義大學食科系</title>
@@ -80,7 +49,11 @@
                         <div class="collapse navbar-collapse" id="main_nav">
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  關於食科  </a>
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16 ">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                  </svg>  <b id="aboutDepartment">關於食科</b> </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="../../../index.html"> 系所簡介 </a></li>
                                     <li><a class="dropdown-item" href="../../../Teacher/index.html"> 師資陣容 </a></li>
@@ -92,24 +65,27 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  學生專區  </a>
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-graduation-cap"></i> <b> 學生專區 </b> </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> 新生專欄 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 入學管道 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 跨領域學程 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 實習專區 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 獎學金專區 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 新生專欄 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 入學管道 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 跨領域學程 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 實習專區 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 獎學金專區 </a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  系所公告  </a>
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 14 14">
+                                    <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z"/>
+                                  </svg>  <b>系所公告</b>  </a>
+  
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> 會議記錄 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 專題演講 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 法規彙編 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 會議記錄 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 專題演講 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 法規彙編 </a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="#"> 	國際交流 </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" target="_blank"><i class="fas fa-globe"></i> <b>	國際交流 </b> </a></li>
                         </ul>
                         <ul class="navbar-nav ms-auto">
                             <form class="d-flex">
@@ -170,43 +146,103 @@
                           </h2>
                           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                陳桐榮、邱義源、陳樹功、曾耀崑、陳敏捷。1993。Mycological Investigation of Geocarposphere Soils and Harvested Peanut Podsin Taiwan。中國農業化學會誌 31(3):420-429。
-                                <br>
-                                <br>陳桐榮、曾浩洋、虞積凱。1994。以聚合?鏈反應檢測具Ｂ、Ｃ型腸毒素基因之金黃色葡萄球菌。中國農業化學會誌 32(3):322-331。
-                                <br>
-                                <br>陳桐榮、曾浩洋、虞積凱。1994。應用聚合?鏈反應於數種不同食品中腸毒素型金黃色葡萄球菌之檢測。藥物食品分析 2(3):217-224。
-                                <br>
-                                <br>危貴金、方佳雯、陳桐榮。1994。數種蔬菜中麩胱甘太的含量分析。華醫學報 4:293-303。
-                                <br>
-                                <br>陳桐榮、危貴金。1995。花生粕之蛋白質最適抽取條件之探討。中華生質能源學會會誌 14(1,2):10-17。
-                                <br>
-                                <br>危貴金、陳桐榮、方佳雯。1995。以高效能液相層析法分析魚肉中生物胺的含量。藥物食品分析 3(4):307-313。
-                                <br>
-                                <br>陳桐榮、邱義源。1996。蔭油醬醪於不同溫度條件進行發酵其微生物及化學組成變化之探討。中國農業化學會誌 34(2):322-331。
-                                <br>
-                                <br>李益榮、陳桐榮、仇志強、陳敏捷。1996。市售鮮乳脂肪酸組成特性及其與風味關係初步探討。中國畜牧學會會誌 25(2):209-219。
-                                <br>
-                                <br>陳桐榮、危貴金。1996。臺灣南部地區生蔭油品質及揮發性成分之研究。中華生質能源學會會誌 15(1, 2):30-38。
-                                <br>
-                                <br>危貴金、陳桐榮。1997。胡麻的吸濕特性及其在不同水分含量下對Aspergillus  parasiticus 生長及產毒感受性之研究。中國農業化學會誌 35(5):561-572。
-                                <br>
-                                <br>Hau-Yang Tsen and Tong-Rong Chen 2001. Development of DNA Probes and PCR Primers for the Specific Detection of Food Pathogens. Food Scienec and Agricultural Chemistry Vol.3.No.Ⅱ.pp.1-7
-                                <br>
-                                <br>T-R Chen, M-H Hsiao, C-S Chiou, and H-Y Tsen 2001. Development and use of PCR primers for the investigation of Cl, C2 and C3 enterotoxin types of Staphylococcus aureus srains isolated from food-borne outbreaks. International Journal of Food Microbiology 71 (2001) 63-70.
-                                <br>
-                                <br>M. H. Hsiao, T. R. Chen, and H. Y. Tsen. 2003, 12, Novel PCR Primers for Specific Detection of C1, C2 and C3 Enterotoxin Genes in Staphylococcus aureus. Journal of Food and Drug Analysis. 11（4）:338-343.
-                                <br>
-                                <br>Tong-Rong Chen, Chien-Shun Chiou and Hau-Yang Tsen. 2004. Use of novel PCR primers specific to the genes of staphylococcus enterotoxin G, H, I for the survey of Staphyococcus aureus strains isolated from food-poisoning cases and food samples inTaiwan. International Journal Food of Micriobiology. 92(2):189-97.
-                                <br>
-                                <br>危貴金、陳桐榮2004. 市售非發酵大豆食品中異黃酮含量之研究生質能源23(1-2):29-35.
-                                <br>
-                                <br>Tasi-Hsin Chiou, Tong-Rong Chen,Wen-Zhe Hwang, Chien-Ku Lin, and Hau-Yang Tsen. 2005. Sequencing of an Internal transcribed spacer (ITS) region of 16S-23S rRNA gene and designing of PCR primers for the detection of Salmonella spp. in food. International Journal Food of Micriobiology. 97: 259-265
-                                <br>
-                                <br>Que-king wei, Shu-ling hwang and Tong-rong Chen, 2006, Microbiological Quality of Ready-to-eat Food Products in Southern Taiwan, Journal of Food and Drug Analysis. 14（1）:68-73.
-                                <br>
-                                <br>Que-king Wei, Tong-Rong Chen , and Jyun-Ting Chen. 2007. Using of Lactobacillus and Bifidobacterium to product the isoflavone aglycones in fermented soymilk. International Journal of Food Microbiology. 117:120-124.（SCI）
-                                <br>
-                                <br>Que-king Wei, Tong-Rong Chen , and Jyun-Ting Chen. 2008. Use of Bacillus subtilis to enrich isoflavone aglycones in fermented natto. J. Sci. Food Agric. 88:1007~1011. (SCI)
+                                <table>
+                                    <tr>
+                                        <td>
+                                            陳桐榮、邱義源、陳樹功、曾耀崑、陳敏捷。1993。Mycological Investigation of Geocarposphere Soils and Harvested Peanut Podsin Taiwan。中國農業化學會誌 31(3):420-429。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            陳桐榮、曾浩洋、虞積凱。1994。以聚合?鏈反應檢測具Ｂ、Ｃ型腸毒素基因之金黃色葡萄球菌。中國農業化學會誌 32(3):322-331。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            陳桐榮、曾浩洋、虞積凱。1994。應用聚合?鏈反應於數種不同食品中腸毒素型金黃色葡萄球菌之檢測。藥物食品分析 2(3):217-224。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            危貴金、方佳雯、陳桐榮。1994。數種蔬菜中麩胱甘太的含量分析。華醫學報 4:293-303。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            陳桐榮、危貴金。1995。花生粕之蛋白質最適抽取條件之探討。中華生質能源學會會誌 14(1,2):10-17。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            危貴金、陳桐榮、方佳雯。1995。以高效能液相層析法分析魚肉中生物胺的含量。藥物食品分析 3(4):307-313。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            陳桐榮、邱義源。1996。蔭油醬醪於不同溫度條件進行發酵其微生物及化學組成變化之探討。中國農業化學會誌 34(2):322-331。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            李益榮、陳桐榮、仇志強、陳敏捷。1996。市售鮮乳脂肪酸組成特性及其與風味關係初步探討。中國畜牧學會會誌 25(2):209-219。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            陳桐榮、危貴金。1996。臺灣南部地區生蔭油品質及揮發性成分之研究。中華生質能源學會會誌 15(1, 2):30-38。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            危貴金、陳桐榮。1997。胡麻的吸濕特性及其在不同水分含量下對Aspergillus  parasiticus 生長及產毒感受性之研究。中國農業化學會誌 35(5):561-572。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Hau-Yang Tsen and Tong-Rong Chen 2001. Development of DNA Probes and PCR Primers for the Specific Detection of Food Pathogens. Food Scienec and Agricultural Chemistry Vol.3.No.Ⅱ.pp.1-7
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            T-R Chen, M-H Hsiao, C-S Chiou, and H-Y Tsen 2001. Development and use of PCR primers for the investigation of Cl, C2 and C3 enterotoxin types of Staphylococcus aureus srains isolated from food-borne outbreaks. International Journal of Food Microbiology 71 (2001) 63-70.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            M. H. Hsiao, T. R. Chen, and H. Y. Tsen. 2003, 12, Novel PCR Primers for Specific Detection of C1, C2 and C3 Enterotoxin Genes in Staphylococcus aureus. Journal of Food and Drug Analysis. 11（4）:338-343.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Tong-Rong Chen, Chien-Shun Chiou and Hau-Yang Tsen. 2004. Use of novel PCR primers specific to the genes of staphylococcus enterotoxin G, H, I for the survey of Staphyococcus aureus strains isolated from food-poisoning cases and food samples inTaiwan. International Journal Food of Micriobiology. 92(2):189-97.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            危貴金、陳桐榮2004. 市售非發酵大豆食品中異黃酮含量之研究生質能源23(1-2):29-35.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Tasi-Hsin Chiou, Tong-Rong Chen,Wen-Zhe Hwang, Chien-Ku Lin, and Hau-Yang Tsen. 2005. Sequencing of an Internal transcribed spacer (ITS) region of 16S-23S rRNA gene and designing of PCR primers for the detection of Salmonella spp. in food. International Journal Food of Micriobiology. 97: 259-265
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Que-king wei, Shu-ling hwang and Tong-rong Chen, 2006, Microbiological Quality of Ready-to-eat Food Products in Southern Taiwan, Journal of Food and Drug Analysis. 14（1）:68-73.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Que-king Wei, Tong-Rong Chen , and Jyun-Ting Chen. 2007. Using of Lactobacillus and Bifidobacterium to product the isoflavone aglycones in fermented soymilk. International Journal of Food Microbiology. 117:120-124.（SCI）
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Que-king Wei, Tong-Rong Chen , and Jyun-Ting Chen. 2008. Use of Bacillus subtilis to enrich isoflavone aglycones in fermented natto. J. Sci. Food Agric. 88:1007~1011. (SCI)
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                           </div>
                         </div>
@@ -218,71 +254,170 @@
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                  The use of DNA probe and polymerase chain reaction for the specificdetection of Salmonella, Staphylococcus aureus and other pathogenicbacteria. 1991. The XXIV World Veterinary Congress (Brazil).
-                                  <br>
-                                  <br>曾耀崑、張平、陳桐榮。1992。台灣、金門地區花生原料品質之分析評估第七屆全國技術及職業教育研討會。台北。
-                                  <br>
-                                  <br>陳桐榮、曾浩洋。1992。 以非放射性寡核甘酸探針應用於檢測 Ａ、Ｂ腸毒素型金黃色葡萄球菌之探討。第七屆全國技術及職業教育研討會。台北。
-                                  <br>
-                                  <br>Tsen, H.-Y., Yu, G.-K., Chen, T.-R. and Yang, R.-Y. (1992). Use of polymerase chain  reaction for the specific detection of type A.D.E. enterotoxigenic S. aureus. 1992. IFT(Institute of Food Technologist) 53th Annual Meeting, June 20-24, New Orleans, La. USA.
-                                  <br>
-                                  <br>Tsen,H.-Y., Yang, R.-Y. and Chen, T.-R. (1993) Novel oligo-nucleotide probes specific  for the differentiation and survey of enterotoxigenic Staphylococcus aureus. The 93th General Meeting of American Society for Microbiology (ASM). 16-20 May, 1993, Atlanta, Georgia. USA.
-                                  <br>
-                                  <br>Yu,G.-K., Tsen, H.-Y. and Chen, T.-R. 1994. Application of polymerase chain reaction (PCR) for the specific detection of A, B, C, D, E types enterotoxigenic Staphylococcus aureus contaminated in skim milk, pork and sausage.  The 1994  Annual Meeting for the Institute of Food Technologists. June 25-29, 1994. Atlanta, Georgia, USA.
-                                  <br>
-                                  <br>曾耀崑、陳桐榮、曾國書。1996。原料花生中所含影響花生油氧化安定性之重金屬。第二十六屆中華民國食品科學技術學會會員大會。嘉義。
-                                  <br>
-                                  <br>曾耀崑、曾國書、陳桐榮。1998。台灣產酪梨貯藏過程中的褐變與防止之研究。第二十八屆中華民國食品科學技術學會會員大會。屏東。
-                                  <br>
-                                  <br>陳桐榮、曾浩洋。1999。利用PCR技術快速鑑定沙門氏菌(Salmonella)。中國農業化學會第三十七次會員大會。台北。
-                                  <br>
-                                  <br>陳桐榮、蕭明晃、曾浩洋。1999。以PCR檢測腸毒素G、H、I 型金黃色葡萄球菌（Staphylococcus aureus）之研究。第二十九次中華民國食品科學技術學會會員大會。台中
-                                  <br>
-                                  <br>陳桐榮、邱采新、曾浩洋。2002。發展以 ITS 片段設計特異性聚合酶連鎖反應引子組檢沙門氏菌之研究。第三十二次中華民國食品科學技術學會會員大會。台中
-                                  <br>
-                                  <br>Tsen. H. Y., T. H. Chiu, T. R. Chen, C. L. Hung (2003). Designing of PCR primers from the internal transcribed spacer (ITS) region of 16S-23S rRNA gene for the specific detection of Salmonella spp. The American Society for Microbiology (ASM) Conference on Salmonella：Pathogenesis, Epidemiology, and Vaccine Development. Sep. 20-24, 2003, Sardinia, Italy.
-                                  <br>
-                                  <br>劉梅蘭，陳桐榮，李益榮， 2004，11，高機能異黃酮素豆漿之研製，台灣食品科學技術學會第三十四次(第十七屆第二次)會員大會，台北。
-                                  <br>
-                                  <br>陳君婷、陳桐榮、危貴金，2005，06， 探討以不同納豆菌發酵大豆中異黃酮含量的變化。2005全球華人保健食品科技大會，台北。
-                                  <br>
-                                  <br>翁嘉鴻、陳桐榮，2005，11，以 Bacillus subtilis 發酵黃豆生產聚果醣最適條件之探討。2005 國立嘉義大學生物科技展及研發成果發表會，嘉義。
-                                  <br>
-                                  <br>甄玉蓉、張雅琳、陳桐榮，2005，11，試釀樹豆味噌之研究。台灣食品科學技術學會第卅五次(第十八屆第一次)會員大會，台中。
-                                  <br>
-                                  <br>翁嘉鴻、陳桐榮，2005，11，以 Bacillus subtilis 發酵黑豆生產聚果醣最適條件之探討。中華生質能源學會第十一屆(第一次)會員大會暨台灣生質能源應用與展望研討會，台北。
-                                  <br>
-                                  <br>翁嘉鴻、陳桐榮，2006，02，探討以不同Bacillus subtilis 發酵黃豆生產聚果醣。台灣保健食品學會第八次（第四屆第二次）會員大會暨調節免疫力研討會，台中。
-                                  <br> 
-                                  <br>紀志勳、危貴金、陳桐榮，2006，06，乳酸菌發酵廢棄大豆粕產生具生理活性異黃酮發酵條件之探討。台灣農業化學會第四十四次（第三十二屆第一次）會員大會暨第十屆土壤與地下水污染整治研討會，台北。
-                                  <br>
-                                  <br>陳裕仁、陳桐榮，2006，06，台灣南部地區原料乳衛生品質之調查研究。台灣農業化學會第四十四次（第三十二屆第一次）會員大會暨第十屆土壤與地下水污染整治研討會，台北。
-                                  <br>
-                                  <br>張月眉、陳桐榮，2006，06，探討乳酸菌發酵不同花生品種花生乳產生γ-胺基丁酸含量變化之研究。台灣農業化學會第四十四次（第三十二屆第一次）會員大會暨第十屆土壤與地下水污染整治研討會，台北。
-                                  <br>
-                                  <br>陳君婷、陳桐榮、危貴金，2006，06，利用Bacillus subtilis BCRC 14718發酵大豆產生具生理活性異黃酮培養條件之探討。台灣農業化學會第四十四次（第三十二屆第一次）會員大會暨第十屆土壤與地下水污染整治研討會，台北。
-                                  <br>
-                                  <br>危貴金、蘇睿琦、陳桐榮，2007，06，利用Bacillus subtilis發酵豆乳中之納豆激酶及黃酮含量變化之探討。台灣農業化學會第四十五次（第三十二屆第二次）會員大會，台北。
-                                  <br>
-                                  <br>Tong-Rong Chen, Que-king Wei, and Chin-Hsun Chi. 2007. Transformation of isoflavone phytoestrogens in defatted soybean meal fermented by single culture of Lactobacillus paracasei and Bifidobacterium longum. The 4th asian conference on lactic acid bacteria. The 3th international symposium on lactic acid bacteria and health. Oct. 15-16, 2007, P. 96, Shanghai, China.
-                                  <br>
-                                  <br>Que-king Wei, Tong-Rong Chen, and Jyun-Ting Chen. Isoflavone phytoestrogens in soymilk fermented by co-cultures of Lactobacillus and Bifidobacterium. The 4th asian conference on lactic acid bacteria. The 3th international symposium on lactic acid bacteria and health. Oct. 15-16, 2007, P. 109, Shanghai, China.
-                                  <br>
-                                  <br>吳奕頡、江佩倫、劉淑茹、李翌翠、吳哲宇、陳桐榮、李益榮，2007，11，益生菌之益生機制與應用開發研討會暨台灣乳酸菌協會2007會員大會，具高γ-胺基丁酸生產潛力乳酸菌種之篩選，台北。
-                                  <br>
-                                  <br>陳裕仁、陳桐榮、危貴金，2007，12，探討Hafnia alvei在冷藏液態乳製品之生長情形，台灣食品科學技術學會第三十七屆年會，彰化。
-                                  <br>
-                                  <br>蘇睿琦、危貴金、陳桐榮，2007，12，不同溫度下Bacillus subtilis發酵豆乳產生納豆激酶含量之探討，台灣食品科學技術學會第三十七屆年會，彰化。
-                                  <br>
-                                  <br>林原頡、吳綵籈、何曉雯、陳桐榮，2007，12，探討不同花生品種及發芽長度製成之花生乳對乳酸菌發酵後γ-Amino butyric acid含量之影響，台灣食品科學技術學會第三十七屆年會，彰化。
-                                  <br>
-                                  <br>蕭鈺蒨、林美吟、王麗諪、陳桐榮，2008，6，利用不同的Bacillus subtilis 菌株混合發酵富含納豆激酶豆乳以增加異黃酮含量的初步研究，台灣農業化學會第四十六次會員大會，台北。
-                                  <br>
-                                  <br>陳桐榮、莊凱宇，商用醣苷水解酵素對提升豆乳中aglycone 型異黃酮含量之初步研究，2008，6，台灣農業化學會第四十六次會員大會，台北。
-                                  <br>
-                                  <br>陳桐榮、危貴金、陳蕾安，利用乳酸菌發酵葛根後對其類異黃酮含量之影響，98.6.26，台灣農業化學會第四十六次會員大會，台北。
-                                  <br>
-                                  <br>陳桐榮、莊凱宇、危貴金，利用市售醣苷水解酵素提升豆乳中aglycone型異黃酮含量以增加豆乳抗氧化性之研究，98.6.27，台灣農業化學會第四十六次會員大會，台北。　
+                                  <table>
+                                      <tr>
+                                          <td>
+                                            The use of DNA probe and polymerase chain reaction for the specificdetection of Salmonella, Staphylococcus aureus and other pathogenicbacteria. 1991. The XXIV World Veterinary Congress (Brazil).
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            曾耀崑、張平、陳桐榮。1992。台灣、金門地區花生原料品質之分析評估第七屆全國技術及職業教育研討會。台北。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            陳桐榮、曾浩洋。1992。 以非放射性寡核甘酸探針應用於檢測 Ａ、Ｂ腸毒素型金黃色葡萄球菌之探討。第七屆全國技術及職業教育研討會。台北。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            Tsen, H.-Y., Yu, G.-K., Chen, T.-R. and Yang, R.-Y. (1992). Use of polymerase chain  reaction for the specific detection of type A.D.E. enterotoxigenic S. aureus. 1992. IFT(Institute of Food Technologist) 53th Annual Meeting, June 20-24, New Orleans, La. USA.
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            Tsen,H.-Y., Yang, R.-Y. and Chen, T.-R. (1993) Novel oligo-nucleotide probes specific  for the differentiation and survey of enterotoxigenic Staphylococcus aureus. The 93th General Meeting of American Society for Microbiology (ASM). 16-20 May, 1993, Atlanta, Georgia. USA.
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            Yu,G.-K., Tsen, H.-Y. and Chen, T.-R. 1994. Application of polymerase chain reaction (PCR) for the specific detection of A, B, C, D, E types enterotoxigenic Staphylococcus aureus contaminated in skim milk, pork and sausage.  The 1994  Annual Meeting for the Institute of Food Technologists. June 25-29, 1994. Atlanta, Georgia, USA.
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            曾耀崑、陳桐榮、曾國書。1996。原料花生中所含影響花生油氧化安定性之重金屬。第二十六屆中華民國食品科學技術學會會員大會。嘉義。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            曾耀崑、曾國書、陳桐榮。1998。台灣產酪梨貯藏過程中的褐變與防止之研究。第二十八屆中華民國食品科學技術學會會員大會。屏東。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            陳桐榮、曾浩洋。1999。利用PCR技術快速鑑定沙門氏菌(Salmonella)。中國農業化學會第三十七次會員大會。台北。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            陳桐榮、蕭明晃、曾浩洋。1999。以PCR檢測腸毒素G、H、I 型金黃色葡萄球菌（Staphylococcus aureus）之研究。第二十九次中華民國食品科學技術學會會員大會。台中
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            陳桐榮、邱采新、曾浩洋。2002。發展以 ITS 片段設計特異性聚合酶連鎖反應引子組檢沙門氏菌之研究。第三十二次中華民國食品科學技術學會會員大會。台中
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            Tsen. H. Y., T. H. Chiu, T. R. Chen, C. L. Hung (2003). Designing of PCR primers from the internal transcribed spacer (ITS) region of 16S-23S rRNA gene for the specific detection of Salmonella spp. The American Society for Microbiology (ASM) Conference on Salmonella：Pathogenesis, Epidemiology, and Vaccine Development. Sep. 20-24, 2003, Sardinia, Italy.
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            劉梅蘭，陳桐榮，李益榮， 2004，11，高機能異黃酮素豆漿之研製，台灣食品科學技術學會第三十四次(第十七屆第二次)會員大會，台北。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            陳君婷、陳桐榮、危貴金，2005，06， 探討以不同納豆菌發酵大豆中異黃酮含量的變化。2005全球華人保健食品科技大會，台北。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            翁嘉鴻、陳桐榮，2005，11，以 Bacillus subtilis 發酵黃豆生產聚果醣最適條件之探討。2005 國立嘉義大學生物科技展及研發成果發表會，嘉義。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            甄玉蓉、張雅琳、陳桐榮，2005，11，試釀樹豆味噌之研究。台灣食品科學技術學會第卅五次(第十八屆第一次)會員大會，台中。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            翁嘉鴻、陳桐榮，2005，11，以 Bacillus subtilis 發酵黑豆生產聚果醣最適條件之探討。中華生質能源學會第十一屆(第一次)會員大會暨台灣生質能源應用與展望研討會，台北。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            翁嘉鴻、陳桐榮，2006，02，探討以不同Bacillus subtilis 發酵黃豆生產聚果醣。台灣保健食品學會第八次（第四屆第二次）會員大會暨調節免疫力研討會，台中。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            紀志勳、危貴金、陳桐榮，2006，06，乳酸菌發酵廢棄大豆粕產生具生理活性異黃酮發酵條件之探討。台灣農業化學會第四十四次（第三十二屆第一次）會員大會暨第十屆土壤與地下水污染整治研討會，台北。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            陳裕仁、陳桐榮，2006，06，台灣南部地區原料乳衛生品質之調查研究。台灣農業化學會第四十四次（第三十二屆第一次）會員大會暨第十屆土壤與地下水污染整治研討會，台北。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            張月眉、陳桐榮，2006，06，探討乳酸菌發酵不同花生品種花生乳產生γ-胺基丁酸含量變化之研究。台灣農業化學會第四十四次（第三十二屆第一次）會員大會暨第十屆土壤與地下水污染整治研討會，台北。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            陳君婷、陳桐榮、危貴金，2006，06，利用Bacillus subtilis BCRC 14718發酵大豆產生具生理活性異黃酮培養條件之探討。台灣農業化學會第四十四次（第三十二屆第一次）會員大會暨第十屆土壤與地下水污染整治研討會，台北。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            危貴金、蘇睿琦、陳桐榮，2007，06，利用Bacillus subtilis發酵豆乳中之納豆激酶及黃酮含量變化之探討。台灣農業化學會第四十五次（第三十二屆第二次）會員大會，台北。
+                                  
+                                            Tong-Rong Chen, Que-king Wei, and Chin-Hsun Chi. 2007. Transformation of isoflavone phytoestrogens in defatted soybean meal fermented by single culture of Lactobacillus paracasei and Bifidobacterium longum. The 4th asian conference on lactic acid bacteria. The 3th international symposium on lactic acid bacteria and health. Oct. 15-16, 2007, P. 96, Shanghai, China.
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            Que-king Wei, Tong-Rong Chen, and Jyun-Ting Chen. Isoflavone phytoestrogens in soymilk fermented by co-cultures of Lactobacillus and Bifidobacterium. The 4th asian conference on lactic acid bacteria. The 3th international symposium on lactic acid bacteria and health. Oct. 15-16, 2007, P. 109, Shanghai, China.
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            吳奕頡、江佩倫、劉淑茹、李翌翠、吳哲宇、陳桐榮、李益榮，2007，11，益生菌之益生機制與應用開發研討會暨台灣乳酸菌協會2007會員大會，具高γ-胺基丁酸生產潛力乳酸菌種之篩選，台北。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            陳裕仁、陳桐榮、危貴金，2007，12，探討Hafnia alvei在冷藏液態乳製品之生長情形，台灣食品科學技術學會第三十七屆年會，彰化。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            蘇睿琦、危貴金、陳桐榮，2007，12，不同溫度下Bacillus subtilis發酵豆乳產生納豆激酶含量之探討，台灣食品科學技術學會第三十七屆年會，彰化。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            林原頡、吳綵籈、何曉雯、陳桐榮，2007，12，探討不同花生品種及發芽長度製成之花生乳對乳酸菌發酵後γ-Amino butyric acid含量之影響，台灣食品科學技術學會第三十七屆年會，彰化。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            蕭鈺蒨、林美吟、王麗諪、陳桐榮，2008，6，利用不同的Bacillus subtilis 菌株混合發酵富含納豆激酶豆乳以增加異黃酮含量的初步研究，台灣農業化學會第四十六次會員大會，台北。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            陳桐榮、莊凱宇，商用醣苷水解酵素對提升豆乳中aglycone 型異黃酮含量之初步研究，2008，6，台灣農業化學會第四十六次會員大會，台北。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            陳桐榮、危貴金、陳蕾安，利用乳酸菌發酵葛根後對其類異黃酮含量之影響，98.6.26，台灣農業化學會第四十六次會員大會，台北。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            陳桐榮、莊凱宇、危貴金，利用市售醣苷水解酵素提升豆乳中aglycone型異黃酮含量以增加豆乳抗氧化性之研究，98.6.27，台灣農業化學會第四十六次會員大會，台北。　
+                                          </td>
+                                      </tr>
+                                  </table>
                               </div>
                             </div>
                           </div>
@@ -294,17 +429,38 @@
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                  陳桐榮。1991。金黃色葡萄球菌毒素基因之比對及聚合酶連鎖反應之應用。 國立中興大學食品科學所碩士論文。台中。
-                                  <br>
-                                  <br>陳桐榮, 2003, 07, 金黃色葡萄球菌C型次分型與G、H、I 型腸毒素基因之檢測與調查及沙門氏菌ITS序列之應用, 國立中興大學食品科學所博士論文。
-                                  <br>
-                                  <br>翁嘉鴻, 陳桐榮2006, 07, 以Bacillus subtilis發酵大豆及黑豆生產聚果糖最適條件探討, 國立嘉義大學食品科學所碩士論文。
-                                  <br>
-                                  <br>陳君婷, 陳桐榮2006, 07, 以Bacillus spp.發酵蒸煮大豆探討其發酵期間納豆激酶活性與異黃酮含量變化之研究, 國立嘉義大學食品科學所碩士論文。
-                                  <br>
-                                  <br>陳蕾安，陳桐榮2009.07，建立葛根中類異黃酮分析條件及不同加工方式對葛根中類異黃酮含量之影響, 國立嘉義大學食品科學所碩士論文。
-                                  <br>
-                                  <br>莊凱宇，陳桐榮，2009.07，利用反應曲面法探討商用葡萄醣??增加豆乳中去醣?型異黃酮含量最適化條件以提升豆乳機能性之研究, 國立嘉義大學食品科學所碩士論文。
+                                  <table>
+                                      <tr>
+                                          <td>
+                                            陳桐榮。1991。金黃色葡萄球菌毒素基因之比對及聚合酶連鎖反應之應用。 國立中興大學食品科學所碩士論文。台中。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            陳桐榮, 2003, 07, 金黃色葡萄球菌C型次分型與G、H、I 型腸毒素基因之檢測與調查及沙門氏菌ITS序列之應用, 國立中興大學食品科學所博士論文。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            翁嘉鴻, 陳桐榮2006, 07, 以Bacillus subtilis發酵大豆及黑豆生產聚果糖最適條件探討, 國立嘉義大學食品科學所碩士論文。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            陳君婷, 陳桐榮2006, 07, 以Bacillus spp.發酵蒸煮大豆探討其發酵期間納豆激酶活性與異黃酮含量變化之研究, 國立嘉義大學食品科學所碩士論文。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            陳蕾安，陳桐榮2009.07，建立葛根中類異黃酮分析條件及不同加工方式對葛根中類異黃酮含量之影響, 國立嘉義大學食品科學所碩士論文。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            莊凱宇，陳桐榮，2009.07，利用反應曲面法探討商用葡萄醣??增加豆乳中去醣?型異黃酮含量最適化條件以提升豆乳機能性之研究, 國立嘉義大學食品科學所碩士論文。
+                                          </td>
+                                      </tr>
+                                  </table>
                               </div>
                             </div>
                           </div>
@@ -324,15 +480,21 @@
         
         <footer>
             <div class="row align-items-center">
-                <div class="col-12">
-                    國立嘉義大學　版權所有　Copyright © 2017 All Rights Reserved.
-                    <br>國立嘉義大學生命科學院食品科學系
-                    <br>地址：嘉義市學府路300號
-                    <br>電話:05-2717591~2；傳真：05-2717596
-                    <br>歡迎來信：fst@mail.ncyu.edu.tw
-
-
-                </div>
+              <div class="col-12">
+                國立嘉義大學　版權所有　Copyright © 2017 All Rights Reserved.
+  
+                <br>國立嘉義大學生命科學院食品科學系
+  
+                <br><i class="fas fa-map-marker-alt"></i> 地址：嘉義市學府路300號
+  
+                <br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 18 18">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg> 電話：05-2717591~2 &nbsp; <i class="fas fa-fax"></i> 傳真：05-2717596
+                
+                <br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 18 18">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                  </svg>&nbsp;歡迎來信 : fst@mail.ncyu.edu.tw
+            </div>
             </div>
         </footer>
         

@@ -5,43 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="../../../../style.css" rel="stylesheet">
     <style>
-        .container {
-            width:100%;
-        }
-        header {
-            background-color: #F4F6B0;
-            height: 80px;
-            color: black;
-        }
-        @media all and (min-width: 992px) {
-            .navbar .nav-item .dropdown-menu{ display: none; }
-
-            .navbar .nav-item:hover .dropdown-menu{ display: block; }
-            .navbar .nav-item .dropdown-menu{ margin-top:0; }
-        }
-        a {
-            color: rgb(58, 58, 58);
-        }
-        a:hover {
-            color: black;
-        }
-
-        nav {
-            background-color: #e5ddb6;
-        }
-        article {
-            background-color: #e5ddb7;
-            padding: 50px;
-        }
-
-        footer {
-            background-color: #8E8E8E;
-            height: 100px;
-            color: rgb(255, 255, 255);
-            text-align: center;
-            padding-top: 5px;
-            font-size: 10px;
+        td {
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
     </style>
     <title>師資陣容-嘉義大學食科系</title>
@@ -80,7 +50,11 @@
                         <div class="collapse navbar-collapse" id="main_nav">
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  關於食科  </a>
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16 ">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                  </svg>  <b id="aboutDepartment">關於食科</b> </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="../../../index.html"> 系所簡介 </a></li>
                                     <li><a class="dropdown-item" href="../../../Teacher/index.html"> 師資陣容 </a></li>
@@ -92,24 +66,27 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  學生專區  </a>
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-graduation-cap"></i> <b> 學生專區 </b> </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> 新生專欄 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 入學管道 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 跨領域學程 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 實習專區 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 獎學金專區 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 新生專欄 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 入學管道 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 跨領域學程 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 實習專區 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 獎學金專區 </a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  系所公告  </a>
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 14 14">
+                                    <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z"/>
+                                  </svg>  <b>系所公告</b>  </a>
+  
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> 會議記錄 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 專題演講 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 法規彙編 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 會議記錄 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 專題演講 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 法規彙編 </a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="#"> 	國際交流 </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" target="_blank"><i class="fas fa-globe"></i> <b>	國際交流 </b> </a></li>
                         </ul>
                         <ul class="navbar-nav ms-auto">
                             <form class="d-flex">
@@ -143,7 +120,7 @@
         <article>
             <div class="row align-items-center">
                 <div class="col-2">
-                    <img src="http://www.ncyu.edu.tw/files/site_content/fst/04.jpg" alt="" height="150px">
+                    <img src="http://www.ncyu.edu.tw/files/site_content/fst/04.jpg" alt="" height="200px">
                 </div>
                 <div class="col-10" style="text-align: left;">
                     李益榮 教授
@@ -171,61 +148,148 @@
                           </h2>
                           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                李益榮。1970。鳳螺人工繁殖初步試驗。台灣省水產試驗所年報，31:437-448。
-                                <br>
-                                <br>李益榮、張正明、吳瑞碧。1982。番茄糊製造過程中硫化二甲基含量之變化。食品科學，9(3-4):185-192。
-                                <br>
-                                <br>Y.I.Lee, J.M.Chang and J.S. Wu 1982, Consistency changes of tomato juice in concentration process. Chinese J. Food Sci. 9(3-4):163-171.
-                                <br>
-                                <br>李益榮、楊正護、曾再富、黃慧櫻、林高塚。1992。雞肉蒸煮火腿製造改進之研究:Ⅱ-a.雞胸肉比例、食鹽、三聚磷酸鈉及冰水添加量對淘汰蛋雞肉蒸煮火腿官能品質及理化性狀之影響。中國畜牧學會誌，21(2):213-228。
-                                <br>
-                                <br>林高塚、曾再富、楊正護、李益榮。1992。臺灣地區豬隻電宰之研究:Ⅶ.電擊與敲擊昏迷屠宰肉豬僵直前溫體與預冷後屠肉品質之比較。中國畜牧學會誌，21(1):77-84。
-                                <br>
-                                <br>黃文祿、李益榮、邱義源。1992。不同固體熱媒及焙炒桶直徑焙炒花生仁之研究。嘉義農專學報，28:297-325。
-                                <br>
-                                <br>李益榮、黃慧櫻、楊正護。1992。雞肉蒸煮火腿製造改進之研究:Ⅱ-b.淘汰蛋雞肉蒸煮火腿官能品評及理化性狀之潛在特性探討及品管方程式之建立。嘉義農專學報，29:137-152
-                                <br>
-                                <br>林高塚、曾再富、楊正護、李益榮。1992。雞肉蒸煮火腿製造改進之研究:Ⅲ.酸、鹼處理對淘汰蛋雞腿肉品質之影響。食品科學，19(2):138-148。
-                                <br> 
-                                <br>林高塚、曾再富、楊正護、李益榮。1992。雞肉蒸煮火腿製造改進之研究:Ⅳ.機械嫩化及添加填充劑與黏著劑對經酸、鹼處理之淘汰蛋雞腿肉製造蒸煮火腿品質之影響。食品科學，19(2):149-160。
-                                <br>
-                                <br>郭世榮、賴弘智、李益榮。1992。高雄港沿岸海域動物浮游生物相之研究。嘉義農專學報，30:91-106。
-                                <br>
-                                <br>楊正護、陳國隆、林高塚、李益榮、曾再富。1993。臺灣地區豬隻電宰之研究:Ⅷ.豬隻品種、運輸與屠宰方式對肉品質影響之研究。中國畜牧學會誌，22(1):71-80。
-                                <br>
-                                <br>李益榮、郭錦富。1993。豬背脂、豬腹脂及雞皮下脂肪之脂肪酸組成特性比較及其區別。中國畜牧學會誌，22(2):213-219。
-                                <br>
-                                <br>楊正護、李益榮、周仲光。1993。屠前緊迫豬隻放血程度之評估:以光電比色法測定食肉的色素。中國畜牧學會誌，22(4):401-407。
-                                <br>
-                                <br>賴弘智、李益榮、楊正護。中南部主要肉品市場作業汙水與排放水之初步調查研究。1993。農產品批發市場污染防治開發研究計畫專集,pp.49-59。
-                                <br>
-                                <br>李益榮、古國隆、黃慧櫻。1993。市售不同品牌胡麻油摻假檢出初步研究。中國農業化學會誌，31(4):697-701。
-                                <br>
-                                <br>吳建平、林高塚、周榮吉、李益榮，1994超過濾膜濃縮之豬血漿理化學特性及其在凍藏中變化。中華生質能源學會誌，13(1-2):126-133。
-                                <br>
-                                <br>古國隆、郭錦富、李益榮。1995。牛蒡根醃製之初步研究。臺灣省農業試驗所特刊第56號，pp.247-256。
-                                <br>
-                                <br>古國隆、李益榮。1995。培炒方式對苦茶油品質之影響。臺灣省農業試驗所特刊第56號，pp.265-273。
-                                <br>
-                                <br>陳文彬、洪晃佑、李益榮、邱義源。1996。花生濕仁脫膜機之試製(一)基本理工特性之探討。嘉義農專學報，47:33-46。
-                                <br>
-                                <br>李益榮、陳桐榮、仇志強、陳敏捷。1996。市售鮮乳脂肪酸組成特性及其與風味關係初步探討。中國畜牧學會誌，25(2):209-219。
-                                <br>
-                                <br>翁翠吟、李益榮。1998。乳化劑對油炸噴濺影響之初步探討。國立嘉義技術學院學院部食品科學系八十七學年度學生專題研究論文集，pp.81-90。
-                                <br> 
-                                <br>李益榮、郭錦富。噴霧乾燥製造醬油粉末時，不同香味載體對醬油香氣保留之影響。(投稿中)
-                                <br>
-                                <br>陳敏捷、陳桐榮、李益榮。以不同組合之葡萄糖、無脂乳粉及酵母萃取物對L. bulgaricus 和S. thermophillus 混合發酵試製羊奶養樂多。(未發表)
-                                <br>
-                                <br>林文源、李益榮。不同組成重奶油SP對麵糊打發性之影響。(未發表)
-                                <br>
-                                <br>蔡郁君、詹琦閔、李益榮。2000。複合凝固劑對軟豆腐質地之影響。國立嘉義大學食品科學系八十八學年度學生專題研究論文集。
-                                <br>
-                                <br>詹琦閔、蔡郁君、李益榮。2000。軟豆腐最適複合凝固劑組成初步探討。國立嘉義大學食品科學系八十八學年度學生專題研究論文集。
-                                <br>
-                                <br>李益榮。2001。澱粉脢、維他命C、黃豆粉、DATEM、GMS及 SSL對甜麵包質地之影響。休假研究報告(投稿中)。
-                                <br>
-                                <br>李益榮、朱礸英、吳奕頡。2002。台灣產數種糙米富化γ-胺基丁酸潛力之探討。 (投稿中)。
+                                <table>
+                                    <tr>
+                                        <td>
+                                            李益榮。1970。鳳螺人工繁殖初步試驗。台灣省水產試驗所年報，31:437-448。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            李益榮、張正明、吳瑞碧。1982。番茄糊製造過程中硫化二甲基含量之變化。食品科學，9(3-4):185-192。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Y.I.Lee, J.M.Chang and J.S. Wu 1982, Consistency changes of tomato juice in concentration process. Chinese J. Food Sci. 9(3-4):163-171.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            李益榮、楊正護、曾再富、黃慧櫻、林高塚。1992。雞肉蒸煮火腿製造改進之研究:Ⅱ-a.雞胸肉比例、食鹽、三聚磷酸鈉及冰水添加量對淘汰蛋雞肉蒸煮火腿官能品質及理化性狀之影響。中國畜牧學會誌，21(2):213-228。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            林高塚、曾再富、楊正護、李益榮。1992。臺灣地區豬隻電宰之研究:Ⅶ.電擊與敲擊昏迷屠宰肉豬僵直前溫體與預冷後屠肉品質之比較。中國畜牧學會誌，21(1):77-84。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            黃文祿、李益榮、邱義源。1992。不同固體熱媒及焙炒桶直徑焙炒花生仁之研究。嘉義農專學報，28:297-325。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            李益榮、黃慧櫻、楊正護。1992。雞肉蒸煮火腿製造改進之研究:Ⅱ-b.淘汰蛋雞肉蒸煮火腿官能品評及理化性狀之潛在特性探討及品管方程式之建立。嘉義農專學報，29:137-152
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            林高塚、曾再富、楊正護、李益榮。1992。雞肉蒸煮火腿製造改進之研究:Ⅲ.酸、鹼處理對淘汰蛋雞腿肉品質之影響。食品科學，19(2):138-148。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            林高塚、曾再富、楊正護、李益榮。1992。雞肉蒸煮火腿製造改進之研究:Ⅳ.機械嫩化及添加填充劑與黏著劑對經酸、鹼處理之淘汰蛋雞腿肉製造蒸煮火腿品質之影響。食品科學，19(2):149-160。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            郭世榮、賴弘智、李益榮。1992。高雄港沿岸海域動物浮游生物相之研究。嘉義農專學報，30:91-106。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            楊正護、陳國隆、林高塚、李益榮、曾再富。1993。臺灣地區豬隻電宰之研究:Ⅷ.豬隻品種、運輸與屠宰方式對肉品質影響之研究。中國畜牧學會誌，22(1):71-80。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            李益榮、郭錦富。1993。豬背脂、豬腹脂及雞皮下脂肪之脂肪酸組成特性比較及其區別。中國畜牧學會誌，22(2):213-219。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            楊正護、李益榮、周仲光。1993。屠前緊迫豬隻放血程度之評估:以光電比色法測定食肉的色素。中國畜牧學會誌，22(4):401-407。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            賴弘智、李益榮、楊正護。中南部主要肉品市場作業汙水與排放水之初步調查研究。1993。農產品批發市場污染防治開發研究計畫專集,pp.49-59。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            李益榮、古國隆、黃慧櫻。1993。市售不同品牌胡麻油摻假檢出初步研究。中國農業化學會誌，31(4):697-701。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            吳建平、林高塚、周榮吉、李益榮，1994超過濾膜濃縮之豬血漿理化學特性及其在凍藏中變化。中華生質能源學會誌，13(1-2):126-133。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            古國隆、郭錦富、李益榮。1995。牛蒡根醃製之初步研究。臺灣省農業試驗所特刊第56號，pp.247-256。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            古國隆、李益榮。1995。培炒方式對苦茶油品質之影響。臺灣省農業試驗所特刊第56號，pp.265-273。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            陳文彬、洪晃佑、李益榮、邱義源。1996。花生濕仁脫膜機之試製(一)基本理工特性之探討。嘉義農專學報，47:33-46。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            李益榮、陳桐榮、仇志強、陳敏捷。1996。市售鮮乳脂肪酸組成特性及其與風味關係初步探討。中國畜牧學會誌，25(2):209-219。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            翁翠吟、李益榮。1998。乳化劑對油炸噴濺影響之初步探討。國立嘉義技術學院學院部食品科學系八十七學年度學生專題研究論文集，pp.81-90。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            李益榮、郭錦富。噴霧乾燥製造醬油粉末時，不同香味載體對醬油香氣保留之影響。(投稿中)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            陳敏捷、陳桐榮、李益榮。以不同組合之葡萄糖、無脂乳粉及酵母萃取物對L. bulgaricus 和S. thermophillus 混合發酵試製羊奶養樂多。(未發表)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            林文源、李益榮。不同組成重奶油SP對麵糊打發性之影響。(未發表)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            蔡郁君、詹琦閔、李益榮。2000。複合凝固劑對軟豆腐質地之影響。國立嘉義大學食品科學系八十八學年度學生專題研究論文集。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            詹琦閔、蔡郁君、李益榮。2000。軟豆腐最適複合凝固劑組成初步探討。國立嘉義大學食品科學系八十八學年度學生專題研究論文集。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            李益榮。2001。澱粉脢、維他命C、黃豆粉、DATEM、GMS及 SSL對甜麵包質地之影響。休假研究報告(投稿中)。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            李益榮、朱礸英、吳奕頡。2002。台灣產數種糙米富化γ-胺基丁酸潛力之探討。 (投稿中)。
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                           </div>
                         </div>
@@ -237,43 +301,103 @@
                           </h2>
                           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Y.I.Lee, J. M. Chang and J. S. Wu 1982,Consistency changes of tomato juice in concentration process., 1982,paper no.272,IFT 42nd Annual Meeting. Las Vegas, Nevada.
-                                <br>
-                                <br>李益榮、孫璐西。1988。莧菜紅色素萃取的研究。中國農業化學會第26次會員大會手冊，第38頁，臺北。
-                                <br>
-                                <br>楊正護、李益榮。1993。屠前緊迫豬隻放血程度之評估- 以光電比色法測定食肉的色素。第一屆亞太地區肉類科學與技術大會，中國北京。
-                                <br>
-                                <br>李益榮、古國隆、黃慧櫻。1993。市售不同品牌胡麻油摻假檢出初步研究。中國農業化學會第31次會員大會手冊，第86頁，臺北。
-                                <br>
-                                <br>李益榮、郭錦富、古國隆。1993。豬背脂、豬腹脂及雞皮下脂肪之脂肪酸組成特性比較及其區別。中國農業化學會第31次會員大會手冊，第86頁，臺北。
-                                <br>
-                                <br>李益榮、古國隆、黃慧櫻。1993。市售黃豆油、葵花油、胡麻油及香油脂肪酸組成特性之比較及其區別。中國農業化學會第31次會員大會手冊，第86頁，臺北。
-                                <br>
-                                <br>古國隆、郭錦富、李益榮。1995。牛蒡根醃製之初步研究。臺灣省農業試驗所特刊第56號，pp.247-256.臺中縣。
-                                <br>
-                                <br>古國隆、李益榮。1995。培炒方式對苦茶油品質之影響。臺灣省農業試驗所特刊第56號，pp.265-273.臺中縣。
-                                <br>
-                                <br>黃玉嬋,李益榮(2003), 酵素法蓮子脫膜之初步探討，台灣食品科學技術學會第三十三次會員大會，FP-24, p.398.  (國內)
-                                <br>
-                                <br>劉梅蘭，陳桐榮，李益榮(2004)。高機能異黃酮素豆漿之研製，臺灣食品科學技術學會第三十四次會員大會，E75.  (國內)
-                                <br> 
-                                <br>劉梅蘭，李益榮(2004)。高機能異黃酮素豆腐之研製，臺灣食品科學技術學會第三十四次會員大會，E26.  (國內)
-                                <br>
-                                <br>劉淑如、江佩倫、李益榮(2005)。數種榖豆芽及玉米營養補充物最適配方探討-以機能性成份及抗氧化力為基礎。臺灣農業化學會第四十三次會員大會壁報論文(國內)
-                                <br>
-                                <br>杜采蓉、陳櫻雪、黃玉嬋、李益榮(2005)。蓮子大量脫膜法之研究，臺灣食品科學技術學會第三十五次會員大會，C13. p.269  (國內)
-                                <br>
-                                <br>羅筱婷、陳櫻雪、李翌翠、李益榮(2006)。凝固劑對豆腐質地影響的初步探討。臺灣食品科學技術學會第三十六次會員大會。
-                                <br>
-                                <br>朱礸英、李益榮。(2006)。臺灣良質糙米品種在γ-胺基丁酸富化潛力上的探討。臺灣食品科學技術學會第三十六次會員大會。
-                                <br>
-                                <br>林子揚,李益榮(2007)。廢棄酸菜尾的微波真空乾燥。臺灣農業化學會第45次會員大會。
-                                <br>
-                                <br>羅篠婷、李翌翠、李益榮 (2007)。不同筋度麵粉比例對油條膨發及吸油率的影響。臺灣農業化學會第45次會員大會。
-                                <br>
-                                <br>羅篠婷、黃銀波、李益榮(2008)。不同膨發劑比例及添加量對油條膨發及吸油率的影響。臺灣農業化學會 第46次會員大會。
-                                <br>
-                                <br>林子揚、李益榮(2008)。微波真空乾燥廢棄酸菜尾的探討。臺灣農業化學會 第46次會員大會。
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Y.I.Lee, J. M. Chang and J. S. Wu 1982,Consistency changes of tomato juice in concentration process., 1982,paper no.272,IFT 42nd Annual Meeting. Las Vegas, Nevada.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            李益榮、孫璐西。1988。莧菜紅色素萃取的研究。中國農業化學會第26次會員大會手冊，第38頁，臺北。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            楊正護、李益榮。1993。屠前緊迫豬隻放血程度之評估- 以光電比色法測定食肉的色素。第一屆亞太地區肉類科學與技術大會，中國北京。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            李益榮、古國隆、黃慧櫻。1993。市售不同品牌胡麻油摻假檢出初步研究。中國農業化學會第31次會員大會手冊，第86頁，臺北。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            李益榮、郭錦富、古國隆。1993。豬背脂、豬腹脂及雞皮下脂肪之脂肪酸組成特性比較及其區別。中國農業化學會第31次會員大會手冊，第86頁，臺北。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            李益榮、古國隆、黃慧櫻。1993。市售黃豆油、葵花油、胡麻油及香油脂肪酸組成特性之比較及其區別。中國農業化學會第31次會員大會手冊，第86頁，臺北。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            古國隆、郭錦富、李益榮。1995。牛蒡根醃製之初步研究。臺灣省農業試驗所特刊第56號，pp.247-256.臺中縣。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            古國隆、李益榮。1995。培炒方式對苦茶油品質之影響。臺灣省農業試驗所特刊第56號，pp.265-273.臺中縣。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            黃玉嬋,李益榮(2003), 酵素法蓮子脫膜之初步探討，台灣食品科學技術學會第三十三次會員大會，FP-24, p.398.  (國內)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            劉梅蘭，陳桐榮，李益榮(2004)。高機能異黃酮素豆漿之研製，臺灣食品科學技術學會第三十四次會員大會，E75.  (國內)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            劉梅蘭，李益榮(2004)。高機能異黃酮素豆腐之研製，臺灣食品科學技術學會第三十四次會員大會，E26.  (國內)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            劉淑如、江佩倫、李益榮(2005)。數種榖豆芽及玉米營養補充物最適配方探討-以機能性成份及抗氧化力為基礎。臺灣農業化學會第四十三次會員大會壁報論文(國內)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            杜采蓉、陳櫻雪、黃玉嬋、李益榮(2005)。蓮子大量脫膜法之研究，臺灣食品科學技術學會第三十五次會員大會，C13. p.269  (國內)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            羅筱婷、陳櫻雪、李翌翠、李益榮(2006)。凝固劑對豆腐質地影響的初步探討。臺灣食品科學技術學會第三十六次會員大會。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            朱礸英、李益榮。(2006)。臺灣良質糙米品種在γ-胺基丁酸富化潛力上的探討。臺灣食品科學技術學會第三十六次會員大會。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            林子揚,李益榮(2007)。廢棄酸菜尾的微波真空乾燥。臺灣農業化學會第45次會員大會。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            羅篠婷、李翌翠、李益榮 (2007)。不同筋度麵粉比例對油條膨發及吸油率的影響。臺灣農業化學會第45次會員大會。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            羅篠婷、黃銀波、李益榮(2008)。不同膨發劑比例及添加量對油條膨發及吸油率的影響。臺灣農業化學會 第46次會員大會。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            林子揚、李益榮(2008)。微波真空乾燥廢棄酸菜尾的探討。臺灣農業化學會 第46次會員大會。
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                           </div>
                         </div>
@@ -285,13 +409,28 @@
                           </h2>
                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                1. 廖一久、池晶萍、王顯章、李益榮、嚴宏洋。1977。草蝦養殖專輯，臺灣省水產試驗所東港分所出版。
-                                <br>
-                                <br>2. 王顯章、池晶萍、朱亮、李益榮、嚴宏洋。1978。水產養殖推廣報告，臺灣省水產試驗所東港分所出版。
-                                <br>
-                                <br>3. 莧菜紅色素之萃取及膜濃縮之研究，1989。(博士論文)。
-                                <br>
-                                <br>4. 賴弘智、李益榮、楊正護。1991。肉品批發市場的汙染防治。現代肉品，第17期，p31.
+                                <table>
+                                    <tr>
+                                        <td>
+                                            廖一久、池晶萍、王顯章、李益榮、嚴宏洋。1977。草蝦養殖專輯，臺灣省水產試驗所東港分所出版。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            王顯章、池晶萍、朱亮、李益榮、嚴宏洋。1978。水產養殖推廣報告，臺灣省水產試驗所東港分所出版。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            莧菜紅色素之萃取及膜濃縮之研究，1989。(博士論文)。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            賴弘智、李益榮、楊正護。1991。肉品批發市場的汙染防治。現代肉品，第17期，p31.
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                           </div>
                         </div>
@@ -303,55 +442,97 @@
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                <strong>1.有孔易煎之豆腐製造方法。</strong>
-                                <br>
-                                <br>台灣專利證書編號：第I223983號（2004年-2021年）
-                                <br>
-                                <br>中國專利證書編號：第166096號(2004/08/04公告，起20年)
-                                <br>
-                                <br>日本申請案號：特願2002-6455(進入實體審查程序)
-                                <br>
-                                <br>韓國專利已通過（證書核發中）
-                                <br>
-                                <br><strong>2. 龍眼乾肉快速脫殼及脫核之方法 (93/09/11公告)</strong>
-                                <br>
-                                <br>台灣專利證書編號：第I220856號
-                                <br>
-                                <br><strong>3. 促進植物機能性物質的方法 (專利申請中)</strong> 
-                                <br>
-                                <br>台灣申請案號：092115488號(日期：2003/06/09)  
-                                <br>
-                                <br><strong>4.提高發芽種子的機能性物方法（專利已核准，證書核發中）</strong>
-                                <br>
-                                <br>台灣專利證書編號：第I248787號（2006/02/21-2023/06/08）
-                                <br>
-                                <br><strong>5.已脫殼的帶皮種子之快速脫皮法（專利已核准，證書核發中）</strong>
-                                <br>
-                                <br>台灣專利證書編號：第I249380號（公告日：2006/02/21）
-                                <br>
-                                <br><strong>6.Bean Curd Production Methodology</strong>
-                                <br>
-                                <br>Korean Patent No. 0570313 (2006-)
-                                <br>
-                                <br><strong>6.孔を有し煮ゃすぃ豆腐の製造方法</strong>
-                                <br>
-                                <br>    國際日本發明：第特許第3941920號（2007/12/01-2022/01/01）
-                                <br>
-                                <br><strong>7.發芽處理方法</strong>
-                                <br>
-                                <br>  台灣專利證書編號：發明第 I 287434號（2007/10/01-2026/03/23）
-                                <br>
-                                <br><strong>8.快速去除農產品薄皮的方法</strong>
-                                <br>
-                                <br>   台灣專利證書編號：發明專利 第 I 94142359號（2007/06/20-2026/06/19）
-                                <br>
-                                <br><strong>9.盒裝富氣泡豆腐的製造方法</strong>
-                                <br>
-                                <br>   台灣專利證書編號：  （2008/11/01-2028/10/31）
-                                <br>
-                                <br><strong>10.具舒壓保健效果的拍打器</strong>
-                                <br>
-                                <br>    中華民國專利證書發明第 I 324921號（2010/05/21-2025/12/11）
+                                  <table>
+                                      <tr>
+                                          <td>
+                                            <strong>1.有孔易煎之豆腐製造方法。</strong>
+                                            <br>
+                                            <br>台灣專利證書編號：第I223983號（2004年-2021年）
+                                            <br>
+                                            <br>中國專利證書編號：第166096號(2004/08/04公告，起20年)
+                                            <br>
+                                            <br>日本申請案號：特願2002-6455(進入實體審查程序)
+                                            <br>
+                                            <br>韓國專利已通過（證書核發中）
+                                            <br>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            <strong>2. 龍眼乾肉快速脫殼及脫核之方法 (93/09/11公告)</strong>
+                                            <br>
+                                            <br>台灣專利證書編號：第I220856號
+                                            <br>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            <strong>3. 促進植物機能性物質的方法 (專利申請中)</strong> 
+                                            <br>
+                                            <br>台灣申請案號：092115488號(日期：2003/06/09)  
+                                            <br>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            <strong>4.提高發芽種子的機能性物方法（專利已核准，證書核發中）</strong>
+                                            <br>
+                                            <br>台灣專利證書編號：第I248787號（2006/02/21-2023/06/08）
+                                            <br>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            <strong>5.已脫殼的帶皮種子之快速脫皮法（專利已核准，證書核發中）</strong>
+                                            <br>
+                                            <br>台灣專利證書編號：第I249380號（公告日：2006/02/21）
+                                            <br>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            <strong>6.Bean Curd Production Methodology</strong>
+                                            <br>
+                                            <br>Korean Patent No. 0570313 (2006-)
+                                            <br>
+                                            <br><strong>6.孔を有し煮ゃすぃ豆腐の製造方法</strong>
+                                            <br>
+                                            <br>    國際日本發明：第特許第3941920號（2007/12/01-2022/01/01）
+                                            <br>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            <strong>7.發芽處理方法</strong>
+                                            <br>
+                                            <br>  台灣專利證書編號：發明第 I 287434號（2007/10/01-2026/03/23）
+                                            <br>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            <strong>8.快速去除農產品薄皮的方法</strong>
+                                            <br>
+                                            <br>   台灣專利證書編號：發明專利 第 I 94142359號（2007/06/20-2026/06/19）
+                                            <br>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            <strong>9.盒裝富氣泡豆腐的製造方法</strong>
+                                            <br>
+                                            <br>   台灣專利證書編號：  （2008/11/01-2028/10/31）
+                                            <br>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            <strong>10.具舒壓保健效果的拍打器</strong>
+                                            <br>
+                                            <br>    中華民國專利證書發明第 I 324921號（2010/05/21-2025/12/11）
+                                          </td>
+                                      </tr>
+                                  </table>
                               </div>
                             </div>
                           </div>
@@ -363,57 +544,138 @@
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                1. 抽樣調查設計與分析。70。
-                                <br>
-                                <br>2. 可程式控制器應用初級實務。810827-810904。
-                                <br>
-                                <br>3. 食品噴霧乾燥加工研討會。810909。
-                                <br>
-                                <br>4. Multivariate Statistical Methods。820209-820211。
-                                <br>
-                                <br>5. 無菌加工與包裝技術研習。820802-820805。
-                                <br>
-                                <br>6. 雙螺桿押出成形技術班。821120-821204。
-                                <br>
-                                <br>7. 83年度降低農業產銷成本經營管理專業人才培訓。830119-830203。
-                                <br>
-                                <br>8. 農藥殘留檢測。830802-830803。
-                                <br>
-                                <br>9. 電腦輔助測試與統計製程管理。831210-831218。
-                                <br>
-                                <br>10. ISO 9000 主任評審員培訓。840116-840120。
-                                <br>
-                                <br>11. 品質管制技術師研習班。840213-840320。
-                                <br>
-                                <br>12. 機械識圖與設計概念研習班。840506-840610。
-                                <br>
-                                <br>13. 田口品質工程專業講師培訓。840816-841212。
-                                <br>
-                                <br>14. 商品企劃七手法。850116-850119。
-                                <br>
-                                <br>15. Multivariate Quality Control。85
-                                <br>
-                                <br>16. 如何塑造持續創新的企業研討會。860619-860620。
-                                <br>
-                                <br>17. 生化儀器分析研習班。870417-870425。
-                                <br>
-                                <br>18. 藥用植物之生物技術。870505-870506。
-                                <br>
-                                <br>19. 生物反應器之設計及疫苗生產之應用及工業用細胞培養技術簡介。870518。
-                                <br>
-                                <br>20. 中國傳統麵食訓練班。870720-870724。
-                                <br>
-                                <br>21. 計量統計分析於食品產業之應用研討會。871208-871209。
-                                <br>
-                                <br>22. 食品工廠GMP實務班。880406-880407。新竹食品工業研究所。
-                                <br>
-                                <br>23. 界面化學工業科技人才培訓。880521-880527。
-                                <br>
-                                <br>24. 中式米食訓練班。880705-880709。
-                                <br>
-                                <br>25. 應用生物技術人才培訓。881102-881124。
-                                <br>
-                                <br>26. 蛋白質與酵素工作班。900726-900729。
+                                  <table>
+                                      <tr>
+                                          <td>
+                                            1. 抽樣調查設計與分析。70。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            2. 可程式控制器應用初級實務。810827-810904。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            3. 食品噴霧乾燥加工研討會。810909。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            4. Multivariate Statistical Methods。820209-820211。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            5. 無菌加工與包裝技術研習。820802-820805。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            6. 雙螺桿押出成形技術班。821120-821204。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            7. 83年度降低農業產銷成本經營管理專業人才培訓。830119-830203。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            8. 農藥殘留檢測。830802-830803。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            9. 電腦輔助測試與統計製程管理。831210-831218。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            10. ISO 9000 主任評審員培訓。840116-840120。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            11. 品質管制技術師研習班。840213-840320。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            12. 機械識圖與設計概念研習班。840506-840610。
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                            13. 田口品質工程專業講師培訓。840816-841212。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            14. 商品企劃七手法。850116-850119。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            15. Multivariate Quality Control。85
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            16. 如何塑造持續創新的企業研討會。860619-860620。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            17. 生化儀器分析研習班。870417-870425。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            18. 藥用植物之生物技術。870505-870506。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            19. 生物反應器之設計及疫苗生產之應用及工業用細胞培養技術簡介。870518。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            20. 中國傳統麵食訓練班。870720-870724。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            21. 計量統計分析於食品產業之應用研討會。871208-871209。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            22. 食品工廠GMP實務班。880406-880407。新竹食品工業研究所。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            23. 界面化學工業科技人才培訓。880521-880527。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            24. 中式米食訓練班。880705-880709。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            25. 應用生物技術人才培訓。881102-881124。
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            26. 蛋白質與酵素工作班。900726-900729。
+                                        </td>
+                                    </tr>
+                                  </table>
                               </div>
                             </div>
                           </div>
@@ -425,7 +687,14 @@
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                李益榮。1991。饕。食品工業學報，第14期，第12頁。(新詩)
+                                  <table>
+                                      <tr>
+                                          <td>
+                                            李益榮。1991。饕。食品工業學報，第14期，第12頁。(新詩)
+                                          </td>
+                                      </tr>
+                                  </table>
+                                
                               </div>
                             </div>
                           </div>
@@ -445,15 +714,21 @@
         
         <footer>
             <div class="row align-items-center">
-                <div class="col-12">
-                    國立嘉義大學　版權所有　Copyright © 2017 All Rights Reserved.
-                    <br>國立嘉義大學生命科學院食品科學系
-                    <br>地址：嘉義市學府路300號
-                    <br>電話:05-2717591~2；傳真：05-2717596
-                    <br>歡迎來信：fst@mail.ncyu.edu.tw
-
-
-                </div>
+              <div class="col-12">
+                國立嘉義大學　版權所有　Copyright © 2017 All Rights Reserved.
+  
+                <br>國立嘉義大學生命科學院食品科學系
+  
+                <br><i class="fas fa-map-marker-alt"></i> 地址：嘉義市學府路300號
+  
+                <br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 18 18">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg> 電話：05-2717591~2 &nbsp; <i class="fas fa-fax"></i> 傳真：05-2717596
+                
+                <br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 18 18">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                  </svg>&nbsp;歡迎來信 : fst@mail.ncyu.edu.tw
+            </div>
             </div>
         </footer>
         

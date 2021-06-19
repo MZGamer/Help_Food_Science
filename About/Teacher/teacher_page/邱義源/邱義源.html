@@ -5,45 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <style>
-        .container {
-            width:100%;
-        }
-        header {
-            background-color: #F4F6B0;
-            height: 80px;
-            color: black;
-        }
-        @media all and (min-width: 992px) {
-            .navbar .nav-item .dropdown-menu{ display: none; }
-
-            .navbar .nav-item:hover .dropdown-menu{ display: block; }
-            .navbar .nav-item .dropdown-menu{ margin-top:0; }
-        }
-        a {
-            color: rgb(58, 58, 58);
-        }
-        a:hover {
-            color: black;
-        }
-
-        nav {
-            background-color: #e5ddb6;
-        }
-        article {
-            background-color: #e5ddb7;
-            padding: 50px;
-        }
-
-        footer {
-            background-color: #8E8E8E;
-            height: 100px;
-            color: rgb(255, 255, 255);
-            text-align: center;
-            padding-top: 5px;
-            font-size: 10px;
-        }
-    </style>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="../../../../style.css" rel="stylesheet">
     <title>師資陣容-嘉義大學食科系</title>
 </head>
 <body>
@@ -80,7 +44,11 @@
                         <div class="collapse navbar-collapse" id="main_nav">
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  關於食科  </a>
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16 ">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                  </svg>  <b id="aboutDepartment">關於食科</b> </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="../../../index.html"> 系所簡介 </a></li>
                                     <li><a class="dropdown-item" href="../../../Teacher/index.html"> 師資陣容 </a></li>
@@ -92,24 +60,27 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  學生專區  </a>
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-graduation-cap"></i> <b> 學生專區 </b> </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> 新生專欄 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 入學管道 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 跨領域學程 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 實習專區 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 獎學金專區 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 新生專欄 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 入學管道 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 跨領域學程 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 實習專區 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 獎學金專區 </a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  系所公告  </a>
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 14 14">
+                                    <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z"/>
+                                  </svg>  <b>系所公告</b>  </a>
+  
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> 會議記錄 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 專題演講 </a></li>
-                                    <li><a class="dropdown-item" href="#"> 法規彙編 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 會議記錄 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 專題演講 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 法規彙編 </a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="#"> 	國際交流 </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" target="_blank"><i class="fas fa-globe"></i> <b>	國際交流 </b> </a></li>
                         </ul>
                         <ul class="navbar-nav ms-auto">
                             <form class="d-flex">
@@ -171,23 +142,77 @@
                           </h2>
                           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                國立嘉義農專 / 嘉義技術學院 / 嘉義大學 講師 / 副教授 / 教授 35 年
-                                <br>
-                                <br>國立嘉義農專 食品加工科 / 食品工業科 主任 6 年
-                                <br>
-                                <br>國立嘉義農專 / 技術學院 訓導主任 / 學務長 6 年
-                                <br>
-                                <br>國立嘉義技術學院 / 嘉義大學 教務長 6.5 年
-                                <br>
-                                <br>國立嘉義大學 生命科學院 院長 6 年
-                                <br>
-                                <br>國立嘉義技術學院 代理校長
-                                <br>
-                                <br>日本富山大學和漢醫藥綜合研究所訪問研究
-                                <br>
-                                <br>國立嘉義大學 校長 6 年
-                                <br>
-                                <br>曾任考試院典試委員、國科會生物處諮議委員、衛生署食品衛生安全與營養諮議委員、國實院國家實驗動物中心諮議委員、經濟部技術處 SBIR 審查委員 、大學校院校務及院系所評鑑委員 等。
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <br>國立嘉義農專 / 嘉義技術學院 / 嘉義大學 講師 / 副教授 / 教授 35 年
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>國立嘉義農專 食品加工科 / 食品工業科 主任 6 年
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>國立嘉義農專 / 技術學院 訓導主任 / 學務長 6 年
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>國立嘉義技術學院 / 嘉義大學 教務長 6.5 年
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>國立嘉義大學 生命科學院 院長 6 年
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>國立嘉義技術學院 代理校長
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>日本富山大學和漢醫藥綜合研究所訪問研究
+                                            <br>
+                                            <br>
+                                        </td>
+                                        <tr>
+                                            <td>
+                                                <br>國立嘉義大學 校長 6 年
+                                                <br>
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <br>曾任考試院典試委員、國科會生物處諮議委員、衛生署食品衛生安全與營養諮議委員、國實院國家實驗動物中心諮議委員、經濟部技術處 SBIR 審查委員 、大學校院校務及院系所評鑑委員 等。
+                                                <br>
+                                                <br>
+                                            </td>
+                                        </tr>
+                                    </tr>
+                                </table>
+
+
+
+
+
+                                
                             </div>
                           </div>
                         </div>
@@ -199,35 +224,99 @@
                           </h2>
                           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                1.行政院國家科學委員會 傑出研究獎 (79 年 )
-                                <br>
-                                <br>2.行政院國家科學委員會 傑出研究獎 (81 年 )
-                                <br>
-                                <br>3.行政院國家科學委員會 傑出研究獎 (83 年 )
-                                <br>
-                                <br>4.行政院國家科學委員會 特約研究人員「出類拔萃」獎 (86 年 )
-                                <br>
-                                <br>5.行政院國家科學委員會 傑出特約研究人員「望重士林」獎 (91 年 )
-                                <br>
-                                <br>6.中國農業化學會 學術榮譽獎 (83 年 )
-                                <br>
-                                <br>7.中華民國食品科技學會 蔣徐蓮貞女士食品科技研究獎 (78 年 )
-                                <br>
-                                <br>8.中華民國食品科技學會 食品學術研究榮譽獎 (86 年 )
-                                <br>
-                                <br>9.臺灣食品科技學會 張駟祥 教授食品科技學術特殊貢獻獎 (98 年 )
-                                <br>
-                                <br>10.國家生技醫療產業策進會 第七屆國家新創獎 (99 年 )
-                                <br>
-                                <br>11.教育部 教學績優教師獎 (79 年 )
-                                <br>
-                                <br>12.教育部 「六年輔導工作計畫」有功人員獎 (87 年 )
-                                <br>
-                                <br>13.中國訓育學會 第十三屆優秀訓育人員獎 (84 年 )
-                                <br>
-                                <br>14.國立嘉義大學 傑出研究教師獎 (94 年 )
-                                <br>
-                                <br>15.美國花生研究與教育學會 會士 (APRES Fellow) (102 年 )
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <br>1.行政院國家科學委員會 傑出研究獎 (79 年 )<br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>2.行政院國家科學委員會 傑出研究獎 (81 年 )<br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>3.行政院國家科學委員會 傑出研究獎 (83 年 )<br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>4.行政院國家科學委員會 特約研究人員「出類拔萃」獎 (86 年 )<br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>5.行政院國家科學委員會 傑出特約研究人員「望重士林」獎 (91 年 )<br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>6.中國農業化學會 學術榮譽獎 (83 年 )<br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>7.中華民國食品科技學會 蔣徐蓮貞女士食品科技研究獎 (78 年 )<br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>8.中華民國食品科技學會 食品學術研究榮譽獎 (86 年 )
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>9.臺灣食品科技學會 張駟祥 教授食品科技學術特殊貢獻獎 (98 年 )<br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>10.國家生技醫療產業策進會 第七屆國家新創獎 (99 年 )<br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>11.教育部 教學績優教師獎 (79 年 )<br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>12.教育部 「六年輔導工作計畫」有功人員獎 (87 年 )<br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>13.中國訓育學會 第十三屆優秀訓育人員獎 (84 年 )<br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>14.國立嘉義大學 傑出研究教師獎 (94 年 )<br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>15.美國花生研究與教育學會 會士 (APRES Fellow) (102 年 )<br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                           </div>
                         </div>
@@ -239,57 +328,171 @@
                           </h2>
                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>（Ａ） REFEREED PAPER (*Corresponding author)</strong>
-                                <br>
-                                <br>1. Ko, H.-J., C.-Y. Lo, B.-J. Wang, R. Y.-Y. Chiou and S. M. Lin*. 2015. Theaflavin-3,3'-digallate, a black tea polyphenol, stimulates lipolysis associated with the induction of mitochondrial uncoupling proteins and AMPK–FoxO3A–MnSOD pathway in 3T3-L1 adipocytes. J. Functional Foods 17: 271-282.
-                                <br>
-                                <br>2. Senakoon, W., S. Nuchadomrong, R.Y.-Y. Chiou, G. Senawong, S. Jogloy, P. Songsri and A. Patanothai. 2015. Identification of peanut seed prolamins with an antifungal role by 2D-GE and drought treatment. Biosci. Biotech. Biochem. 79: 1771-1778.
-                                <br>
-                                <br>3. Hoang, N. X., S. Ferng, C.-H. Ting, W.-H. Huang, R. Y.-Y. Chiou and C.-K. Hsu*. 2016. Optimizing the initial moromi fermentation conditions to improve the quality of soy sauce. LWT – Food Sci. Technol. 74: 242-250.
-                                <br>
-                                <br>4. Huang, F.-L., R. Y.-Y. Chiou, W.-C. Chen, H.-J. Ko, L.-J. Lai and S.-M. Lin*. 2016. Dehydrated Basella alba fruit juice as a novel natural colorant: pigment stability, in vivo food safety evaluation and anti-inflammatory mechanism characterization. Plant Foods Human Nutr. 71: 322-329.
-                                <br>
-                                <br>5. Lai, T. Y., J. C. Chang, R. S. Chen, C. D. Chu, C. Chu, H. F. Ni and R. Y.-Y. Chiou*. 2016. PCR detection of Botryosphaeria rhodina as a biotic elicitor in enhancement of trans-resveratrol and trans-piceid biosynthesis of peanut kernels during germination. Open Access J. Agric. Res. 1(2): 000111.
-                                <br>
-                                <br>6. Weng, B. B.-C., Lin, W.-S., Chang, J.-C. and R. Y.-Y. Chiou*. 2016. The p hytoestrogenic stilbenes, arachidin-1 and resveratrol, modulate regulatory T cell functions responsible for successful aging in aged ICR mice. Intl. J. Mol. Med. 38: 1895-1904.
-                                <br>
-                                <br>7. Chiou*, R. Y.-Y., P.-C. Chiu, J.-C. Chang, J.-C. Li, C.-W. Hsieh, J.-Y. Wu, S.-M. Lin, Y.-L. Lin and B. B.-C. Weng. 2017. Discovery of new stilbene antioxidants of the bio-elicited peanut sprout powder (BPSP) and longevity extension of mice fed with BPSP-supplemented diets. Food Nutr. Sci. 8: 141-162.
-                                <br>
-                                <br>8. Lai, L.-J., L.-M. Chiu and R. Y.-Y. Chiou*. 2017. Fresh preservation of alfalfa sprouts and mushroom slices by soaking with thymol and resveratrol solutions. Food Sci. Nutr.  2017: 00: 1-8. ( DOI: 10.1002/fsn3.458)
-                                <br>
-                                <br>9. Lai, L.-J., F.-L. Huang, P.-H. Cheng and R. Y.-Y. Chiou*. 2017. SDS-PAGE detection and proteomic characterization of glycation-sensitive bovine serum albumin peptides and referenced in comparison with human serum albumin. Intl. J. Clin. Nutr. Diet. 2: 123 (https://doi.org/10.15344/2456-8171/2017/123).
-                                <br>
-                                <br>10. Ko, C.-Y., Y.-J. Lai, Y.-M. Zeng, R.-H. Lin, J.-R. Deng, R. Y.-Y. Chiou and S.-C. Wu*. Stilbenes: A potential preservative for sausage products. J. Food Process. Preservation. Sep. 2017. DOI:  10.1111/jfpp.13456.
-                                <br>
-                                <br>11. Chiu, P.-C., Y.-J. Li and R. Y.-Y. Chiou*. 2018. Peroxidase characterization isolated from germinated peanut embryos (GPE) and application of the freeze-dried GPE powder as enzyme source for biomimetic production of δ-viniferin. Process Biochem. 66: 97-105. (SCI)
-                                <br>
-                                <br>12. Ferng, S., W.-H. Huang, C.-P. Wu, Y.-T. Lu, C.-K. Hsu, R. Y.-Y. Chiou and C.-H. Ting*. 2019. A Controlled fermentation environment for producing quality soya sauce. Advan. Technol. Innov. 4: 11- 20.
-                                <br>
-                                <br>13. Ferng, S., I.-H. Wu, A.-Y. Li, C.-K. Hsu, R. Y.-Y. Chiou and C.-H. Ting*. 2020. Ultra-violet treatment for fermenting low-salt soya sauce. Proc. Eng. Technol. Innov. 15: 35 – 41.
-                                <br>
-                                <br>14. Cheng, P.-H., P.-C. Chiu, J.-C. Chang, S.-M. Lin, Y.-J. Li, D.-Y. Lo, L.-R. Lai, S.-C. Wu and R. Y.-Y. Chiou*. 2021. Inhibition of testosterone-mediated benign prostatic enlargement of orchiectomized Sprague-Dawley rats by diets supplemented with bio-elicited peanut sprout powder (BPSP) and three new BPSP-extracted natural compounds identified. J. Functional Foods 79 (2021) 104383.
+                                <br><strong>（Ａ） REFEREED PAPER (*Corresponding author)</strong>
                                 <br>
                                 <br>
-                                <br>
-                                <br><strong>（Ｂ） CONFERENCE PAPER</strong>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <br>1. Ko, H.-J., C.-Y. Lo, B.-J. Wang, R. Y.-Y. Chiou and S. M. Lin*. 2015. Theaflavin-3,3'-digallate, a black tea polyphenol, stimulates lipolysis associated with the induction of mitochondrial uncoupling proteins and AMPK–FoxO3A–MnSOD pathway in 3T3-L1 adipocytes. J. Functional Foods 17: 271-282.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br> 2. Senakoon, W., S. Nuchadomrong, R.Y.-Y. Chiou, G. Senawong, S. Jogloy, P. Songsri and A. Patanothai. 2015. Identification of peanut seed prolamins with an antifungal role by 2D-GE and drought treatment. Biosci. Biotech. Biochem. 79: 1771-1778.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br> 3. Hoang, N. X., S. Ferng, C.-H. Ting, W.-H. Huang, R. Y.-Y. Chiou and C.-K. Hsu*. 2016. Optimizing the initial moromi fermentation conditions to improve the quality of soy sauce. LWT – Food Sci. Technol. 74: 242-250.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>4. Huang, F.-L., R. Y.-Y. Chiou, W.-C. Chen, H.-J. Ko, L.-J. Lai and S.-M. Lin*. 2016. Dehydrated Basella alba fruit juice as a novel natural colorant: pigment stability, in vivo food safety evaluation and anti-inflammatory mechanism characterization. Plant Foods Human Nutr. 71: 322-329.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>5. Lai, T. Y., J. C. Chang, R. S. Chen, C. D. Chu, C. Chu, H. F. Ni and R. Y.-Y. Chiou*. 2016. PCR detection of Botryosphaeria rhodina as a biotic elicitor in enhancement of trans-resveratrol and trans-piceid biosynthesis of peanut kernels during germination. Open Access J. Agric. Res. 1(2): 000111.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>6. Weng, B. B.-C., Lin, W.-S., Chang, J.-C. and R. Y.-Y. Chiou*. 2016. The p hytoestrogenic stilbenes, arachidin-1 and resveratrol, modulate regulatory T cell functions responsible for successful aging in aged ICR mice. Intl. J. Mol. Med. 38: 1895-1904.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>7. Chiou*, R. Y.-Y., P.-C. Chiu, J.-C. Chang, J.-C. Li, C.-W. Hsieh, J.-Y. Wu, S.-M. Lin, Y.-L. Lin and B. B.-C. Weng. 2017. Discovery of new stilbene antioxidants of the bio-elicited peanut sprout powder (BPSP) and longevity extension of mice fed with BPSP-supplemented diets. Food Nutr. Sci. 8: 141-162.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>8. Lai, L.-J., L.-M. Chiu and R. Y.-Y. Chiou*. 2017. Fresh preservation of alfalfa sprouts and mushroom slices by soaking with thymol and resveratrol solutions. Food Sci. Nutr.  2017: 00: 1-8. ( DOI: 10.1002/fsn3.458)
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>9. Lai, L.-J., F.-L. Huang, P.-H. Cheng and R. Y.-Y. Chiou*. 2017. SDS-PAGE detection and proteomic characterization of glycation-sensitive bovine serum albumin peptides and referenced in comparison with human serum albumin. Intl. J. Clin. Nutr. Diet. 2: 123 (https://doi.org/10.15344/2456-8171/2017/123).
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>10. Ko, C.-Y., Y.-J. Lai, Y.-M. Zeng, R.-H. Lin, J.-R. Deng, R. Y.-Y. Chiou and S.-C. Wu*. Stilbenes: A potential preservative for sausage products. J. Food Process. Preservation. Sep. 2017. DOI:  10.1111/jfpp.13456.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>11. Chiu, P.-C., Y.-J. Li and R. Y.-Y. Chiou*. 2018. Peroxidase characterization isolated from germinated peanut embryos (GPE) and application of the freeze-dried GPE powder as enzyme source for biomimetic production of δ-viniferin. Process Biochem. 66: 97-105. (SCI)
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>12. Ferng, S., W.-H. Huang, C.-P. Wu, Y.-T. Lu, C.-K. Hsu, R. Y.-Y. Chiou and C.-H. Ting*. 2019. A Controlled fermentation environment for producing quality soya sauce. Advan. Technol. Innov. 4: 11- 20.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>13. Ferng, S., I.-H. Wu, A.-Y. Li, C.-K. Hsu, R. Y.-Y. Chiou and C.-H. Ting*. 2020. Ultra-violet treatment for fermenting low-salt soya sauce. Proc. Eng. Technol. Innov. 15: 35 – 41.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>14. Cheng, P.-H., P.-C. Chiu, J.-C. Chang, S.-M. Lin, Y.-J. Li, D.-Y. Lo, L.-R. Lai, S.-C. Wu and R. Y.-Y. Chiou*. 2021. Inhibition of testosterone-mediated benign prostatic enlargement of orchiectomized Sprague-Dawley rats by diets supplemented with bio-elicited peanut sprout powder (BPSP) and three new BPSP-extracted natural compounds identified. J. Functional Foods 79 (2021) 104383.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                </table>
 
-                                <br>1. 邱義源 , 2015, 12, 從演化看食品科技與身體保健 , 台灣食品科技學會第 45次年會糧食安全系統新趨勢研討會 , 台北 , 台灣。
-                                <br>
-                                <br>2. Chiou, R. Y.-Y. 2016, 10, Chemical and toxicological characterization of bio-activated peanut sprout powder applied as dietary supplements to extend mouse longevity. The 15th International Conference on Food Processing and Technology. Rome, Italy.
-                                <br>
-                                <br>3. Chang, Z.-C., P.-C. Chiu and R. Y.-Y. Chiou. 2017, 7, Hydroxylation of resveratrol in biomimetic production of piceatannol by use of peanut embryos as enzyme source. The 49th Annual Meeting of American Peanut Research and Education Society, Albuquerque, NM, USA.
-                                <br>
-                                <br>4. Cheng, P.-H., R. Y.-Y. Chiou, J.-C. Chang, S.-M. Lin, Y.-L. Chang and D.-Y. Lo, 2017, 7. P rostate weight changes of the orchiectomized Sprague-Dawley rats as affected by dietary supplementation with bio-elicited peanut sprout powder. The 49th Annual Meeting of American Peanut Research and Education Society, Albuquerque, NM, USA.
-                                <br>
-                                <br>5. Chiou, R. Y.-Y., C.-W. Hsieh, T.-Y. Chen, Y.-J. Li, P.-C. Chiu, K.-J. Li, J.-Y. Wu, S.-P. Learn and C.-C. Wu, 2020, Microbiome and chemical assessments of miso inoculated with Akkermansia muciniphila for fermentation. 2020, 10, International Conference of Biotechnology and Healthcare, Chiayi, Taiwan, ROC.
+                                <br><strong>（Ｂ） CONFERENCE PAPER</strong>
                                 <br>
                                 <br>
-                                <br>
+
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <br> 1. 邱義源 , 2015, 12, 從演化看食品科技與身體保健 , 台灣食品科技學會第 45次年會糧食安全系統新趨勢研討會 , 台北 , 台灣。
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>2. Chiou, R. Y.-Y. 2016, 10, Chemical and toxicological characterization of bio-activated peanut sprout powder applied as dietary supplements to extend mouse longevity. The 15th International Conference on Food Processing and Technology. Rome, Italy.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>3. Chang, Z.-C., P.-C. Chiu and R. Y.-Y. Chiou. 2017, 7, Hydroxylation of resveratrol in biomimetic production of piceatannol by use of peanut embryos as enzyme source. The 49th Annual Meeting of American Peanut Research and Education Society, Albuquerque, NM, USA.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>4. Cheng, P.-H., R. Y.-Y. Chiou, J.-C. Chang, S.-M. Lin, Y.-L. Chang and D.-Y. Lo, 2017, 7. P rostate weight changes of the orchiectomized Sprague-Dawley rats as affected by dietary supplementation with bio-elicited peanut sprout powder. The 49th Annual Meeting of American Peanut Research and Education Society, Albuquerque, NM, USA.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>5. Chiou, R. Y.-Y., C.-W. Hsieh, T.-Y. Chen, Y.-J. Li, P.-C. Chiu, K.-J. Li, J.-Y. Wu, S.-P. Learn and C.-C. Wu, 2020, Microbiome and chemical assessments of miso inoculated with Akkermansia muciniphila for fermentation. 2020, 10, International Conference of Biotechnology and Healthcare, Chiayi, Taiwan, ROC.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                </table>
                                 <br><strong>(W) OTHER PUBLICATION</strong>
                                 <br>
-                                <br>1. 邱義源 , 2015, 益生菌 – 與生俱來的保健幫手 , 防癌會訊 52: 10-12.
                                 <br>
-                                <br>2. 邱義源、張如君、張永霖， 2020，落花生，新編台灣雜糧作物（二）雜糧作物の機能性成分與加工利用，第九章， pp 178 - 205。財團法人台灣雜糧發展基金會，台北，台灣。
+
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <br>1. 邱義源 , 2015, 益生菌 – 與生俱來的保健幫手 , 防癌會訊 52: 10-12.
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br> 2. 邱義源、張如君、張永霖， 2020，落花生，新編台灣雜糧作物（二）雜糧作物の機能性成分與加工利用，第九章， pp 178 - 205。財團法人台灣雜糧發展基金會，台北，台灣。
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                           </div>
                         </div>
@@ -301,11 +504,29 @@
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                1. 邱義源、朱健松、侯金龍、劉啟東、張如君、張貴翔， 102年 1月 1日，連續切片機，中華民國發明第 I380887號專利，自 2013年 1月 1日至 2030年 8月 26日。
-                                <br>
-                                <br>2. 邱義源、邱柏璋、張如君、李瑜章， 105年 6月 11日，一種化合物，中華民國發明第 I 537254號專利，自 2016年 6月 11日至 2035年 6月 8日。
-                                <br>
-                                <br>3. 邱義源、張如君、林淑美、邱柏璋、李瑜章、吳進益， 107年 12月 21日，一種包含天然二苯乙烯化合物之醫藥組合物及該化合物之用途，中華民國發明第 I 644668號專利，自 2018年 12月 21日至 2034年 10月 2日。
+                                  <table>
+                                      <tr>
+                                          <td>
+                                            <br>1. 邱義源、朱健松、侯金龍、劉啟東、張如君、張貴翔， 102年 1月 1日，連續切片機，中華民國發明第 I380887號專利，自 2013年 1月 1日至 2030年 8月 26日。
+                                            <br>
+                                            <br>  
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            <br>2. 邱義源、邱柏璋、張如君、李瑜章， 105年 6月 11日，一種化合物，中華民國發明第 I 537254號專利，自 2016年 6月 11日至 2035年 6月 8日。
+                                            <br>
+                                            <br>  
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            <br>3. 邱義源、張如君、林淑美、邱柏璋、李瑜章、吳進益， 107年 12月 21日，一種包含天然二苯乙烯化合物之醫藥組合物及該化合物之用途，中華民國發明第 I 644668號專利，自 2018年 12月 21日至 2034年 10月 2日。
+                                            <br>
+                                            <br>  
+                                        </td>
+                                      </tr>
+                                  </table>
                               </div>
                             </div>
                           </div>
@@ -325,15 +546,21 @@
         
         <footer>
             <div class="row align-items-center">
-                <div class="col-12">
-                    國立嘉義大學　版權所有　Copyright © 2017 All Rights Reserved.
-                    <br>國立嘉義大學生命科學院食品科學系
-                    <br>地址：嘉義市學府路300號
-                    <br>電話:05-2717591~2；傳真：05-2717596
-                    <br>歡迎來信：fst@mail.ncyu.edu.tw
-
-
-                </div>
+              <div class="col-12">
+                國立嘉義大學　版權所有　Copyright © 2017 All Rights Reserved.
+  
+                <br>國立嘉義大學生命科學院食品科學系
+  
+                <br><i class="fas fa-map-marker-alt"></i> 地址：嘉義市學府路300號
+  
+                <br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 18 18">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg> 電話：05-2717591~2 &nbsp; <i class="fas fa-fax"></i> 傳真：05-2717596
+                
+                <br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 18 18">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                  </svg>&nbsp;歡迎來信 : fst@mail.ncyu.edu.tw
+            </div>
             </div>
         </footer>
         

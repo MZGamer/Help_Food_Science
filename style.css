@@ -18,6 +18,11 @@
   background-color: rgba(212, 212, 212, 0.493);
 }
 
+table{
+    margin-left:auto; 
+    margin-right:auto;
+    }
+
 body{
     background-color: rgba(238, 238, 238, 0.326);
 }
