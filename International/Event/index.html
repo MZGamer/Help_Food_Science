@@ -7,7 +7,11 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link href="../../style.css" rel="stylesheet">
-    <title>網站地圖-嘉義大學食科系</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+    <title>國際交流-嘉義大學食科系</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -35,13 +39,15 @@
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg navbar-dar" style=" background-color : #F4F6B0">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#">嘉義大學食品科學系</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                      <div class="container-fluid">
+                        <a class="navbar-brand" href="" style="color: #090909; font-size: larger;"><b>嘉義大學食品科學系</b></a>
+                        
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="main_nav">
                         <div class="collapse navbar-collapse" id="main_nav">
-                        <ul class="navbar-nav">
+                          <ul class="navbar-nav">
                             <li class="nav-item dropdown">
                                 <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16 ">
@@ -50,15 +56,17 @@
                                   </svg>  <b id="aboutDepartment">關於食科</b> </a>
 
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> 系所簡介 </a></li>
-                                    <li><a class="dropdown-item" href="./Teacher/index.html"> 師資陣容 </a></li>
-                                    <li><a class="dropdown-item" href="./Honor Roll/index.html"> 榮譽榜 </a></li>
-                                    <li><a class="dropdown-item" href="./Subject/index.html"> 必修科目冊 </a></li>
+                                    <li><a class="dropdown-item" href="../../About/index.html"> 系所簡介 </a></li>
+                                    <li><a class="dropdown-item" href="../../About/Teacher/index.html"> 師資陣容 </a></li>
+                                    <li><a class="dropdown-item" href="../../About/Honor Roll/index.html"> 榮譽榜 </a></li>
+                                    <li><a class="dropdown-item" href="../../About/Subject/index.html"> 必修科目冊 </a></li>
                                     <li><a class="dropdown-item" href="https://www.facebook.com/NCYU.SA.DFS/"> 系學會 </a></li>
-                                    <li><a class="dropdown-item" href="./Alumni Center/index.html"> 系友會 </a></li>
-                                    <li><a class="dropdown-item" href="./Event/index.html"> 活動花絮 </a></li>
+                                    <li><a class="dropdown-item" href="../../About/Alumni Center/index.html"> 系友會 </a></li>
+                                    <li><a class="dropdown-item" href="../../About/Event/index.html"> 活動花絮 </a></li>
                                 </ul>
                             </li>
+                            
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-graduation-cap"></i> <b> 學生專區 </b> </a>
                                 <ul class="dropdown-menu">
@@ -75,6 +83,7 @@
                                   </svg>  <b>系所公告</b>  </a>
 
                                 <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 最新消息 </a></li>
                                     <li><a class="dropdown-item" href="#" target="_blank"> 會議記錄 </a></li>
                                     <li><a class="dropdown-item" href="#" target="_blank"> 專題演講 </a></li>
                                     <li><a class="dropdown-item" href="#" target="_blank"> 法規彙編 </a></li>
@@ -82,6 +91,7 @@
                             </li>
                             <li class="nav-item"><a class="nav-link" href="#" target="_blank"><i class="fas fa-globe"></i> <b>	國際交流 </b> </a></li>
                         </ul>
+                        
                         <ul class="navbar-nav ms-auto">
                             <form class="d-flex">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -99,7 +109,8 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                           <li class="breadcrumb-item"><a href="#">主頁</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">網站地圖</li>
+                          <li class="breadcrumb-item"><a href="../Index.html">國際交流</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">國際交流花絮</li>
                         </ol>
                       </nav>
                 </div>
@@ -116,56 +127,35 @@
                     <table>
                       <tr>
                           <td style="width: 50%; line-height:45px ;">
-                              <center><h2><b>網站地圖</b></h2>
+                              <center><h2><b>國際交流花絮</b></h2>
                               <p style="font-size: larger;"> 
-                                  通往網站的各個地方<br>
+                                  紀錄與國際友人的交流<br>
                               </p></center>
                           </td>
-                          <td style="width: 50%;"><img src="img/Paper map-bro.png" style="width: 60%; height: auto;"></td>
+                          <td style="width: 50%;"><img src="img/Solidarity-rafiki.png" style="width: 60%; height: auto;"></td>
                       </tr>
                   </table>
                   </div>
             </div>
-            <div class="row">
-                <div class="col-12" style="text-align: left;">
-                    <br><a href="#">1. 首頁</a> 
-                    <br>&emsp; 1-1. 關於食科
-                    <br>&emsp;&emsp; <a href="#">1-1-1. 系所簡介</a> 
-                    <br>&emsp;&emsp; <a href="#">1-1-2. 師資陣容</a>
-                    <br>&emsp;&emsp; <a href="#">1-1-3. 榮譽榜</a>
-                    <br>&emsp;&emsp; <a href="#">1-1-4. 必修科目冊</a>
-                    <br>&emsp;&emsp; <a href="#">1-1-5. 系學會</a>
-                    <br>&emsp;&emsp; <a href="#">1-1-6. 系友會</a>
-                    <br>&emsp;&emsp;&emsp; <a href="#">1-1-6-1. 徵才訊息</a>
-                    <br>&emsp;&emsp;&emsp; <a href="#">1-1-6-2. 系友會組成</a>
-                    <br>&emsp;&emsp;&emsp; <a href="#">1-1-6-3. 系友會活動訊息</a>
-                    <br>&emsp;&emsp;&emsp; <a href="#">1-1-6-4. 系友各項表格下載</a>
-                    <br>&emsp;&emsp;&emsp; <a href="#">1-1-6-5. 嘉大校友中心</a>
-                    <br>&emsp;&emsp;&emsp; <a href="#">1-1-6-6. 歷年嘉大傑出校友榜(食科系友/科友)</a>
-                    <br>&emsp;&emsp;&emsp; <a href="#">1-1-6-7. 歷屆校友熱心服務及貢獻獎（食科系友/科友）</a>
-                    <br>&emsp;&emsp; <a href="#">1-1-7. 活動花絮</a>
-                    <br>&emsp; 1-2. 學生專區
-                    <br>&emsp;&emsp; <a href="#">1-2-1. 新生專欄</a> 
-                    <br>&emsp;&emsp; <a href="#">1-2-2. 入學管道</a>
-                    <br>&emsp;&emsp; <a href="#">1-2-3. 跨領域學程</a>
-                    <br>&emsp;&emsp;&emsp; <a href="#">1-2-3-1. 修習要點</a>
-                    <br>&emsp;&emsp;&emsp; <a href="#">1-2-3-2. 課程設計</a>
-                    <br>&emsp;&emsp;&emsp; <a href="#">1-2-3-3. 課程消息</a>
-                    <br>&emsp;&emsp;&emsp; <a href="#">1-2-3-4. 申請表格</a>
-                    <br>&emsp;&emsp; <a href="#">1-2-4. 實習專區</a>
-                    <br>&emsp;&emsp; <a href="#">1-2-5. 獎學金專區</a>
-                    <br>&emsp; 1-3. 系所公告
-                    <br>&emsp;&emsp; <a href="#">1-3-1. 最新消息</a> 
-                    <br>&emsp;&emsp; <a href="#">1-3-2. 會議記錄</a>
-                    <br>&emsp;&emsp; <a href="#">1-3-3. 專題演講</a>
-                    <br>&emsp;&emsp; <a href="#">1-3-4. 法規彙編</a>
-                    <br>&emsp; 1-4. 國際交流
-                    <br>&emsp;&emsp; <a href="#">1-4-1. 韓國姊妹校</a> 
-                    <br>&emsp;&emsp; <a href="#">1-4-2. 出國研修獎學金</a>
-                    <br>&emsp;&emsp; <a href="#">1-4-3. 國際交流花絮</a>
-                    <br>&emsp;&emsp;&emsp; <a href="#">1-4-3-1. 本系師生國際交流花絮</a>
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a href="https://www.youtube.com/channel/UC4YR9gB0ixFZvAk6BThH79Q" target="_blank">本校師生國際交流花絮</a> </td>
+                          </tr>
+                          <tr>
+                            <td><a href="./Record/index.html">本系師生國際交流花絮</a> </td>
+                          </tr>
+                        </tbody>
+                      </table>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-12" style="text-align: center; padding-top: 20px;">
                     <a href="#" >返回頂部</a>
