@@ -72,3 +72,20 @@ article {
     text-align: center;
     padding: 50px;
 }
+
+.returnHome a:hover{
+    background-color: rgba(162, 180, 180, 0.576);
+    border: none;
+}
+.webGuide a:hover{
+    background-color: rgba(162, 180, 180, 0.576);
+    border: none;
+}
+.commentQA a:hover{
+    background-color: rgba(162, 180, 180, 0.576);
+    border: 0px;
+}
+.comment_mail a:hover{
+    background-color: rgba(162, 180, 180, 0.576);
+    border: none;
+}
