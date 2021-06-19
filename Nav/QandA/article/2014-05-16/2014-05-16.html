@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="../../../../style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <style>
+        td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 1px solid rgb(184, 184, 184);
+        }
+    </style>
+    <title>常見問答-嘉義大學食科系</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="row align-items-center">
+                <div class = "col-8">
+                    <img src="../../../../img/校徽01.png" class="img-thumbnail" alt="..." style="width: auto; max-height: 80px;">
+                </div>
+                <div class = "col-1">
+                    返回首頁
+                </div>
+                <div class = "col-1">
+                    網站導覽
+                </div>
+                <div class = "col-1">
+                    常見問答
+                </div>
+                <div class = "col-1">
+                    意見信箱
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-dar" style=" background-color : #F4F6B0">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">嘉義大學食品科學系</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="main_nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16 ">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                  </svg>  <b id="aboutDepartment">關於食科</b> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../../../../About/index.html"> 系所簡介 </a></li>
+                                    <li><a class="dropdown-item" href="../../../../About/Teacher/index.html"> 師資陣容 </a></li>
+                                    <li><a class="dropdown-item" href="../../../../About/Honor Roll/index.html"> 榮譽榜 </a></li>
+                                    <li><a class="dropdown-item" href="../../../../About/Subject/index.html"> 必修科目冊 </a></li>
+                                    <li><a class="dropdown-item" href="https://www.facebook.com/NCYU.SA.DFS/"> 系學會 </a></li>
+                                    <li><a class="dropdown-item" href="../../../../About/Alumni Center/index.html"> 系友會 </a></li>
+                                    <li><a class="dropdown-item" href="../../../../About/Event/index.html"> 活動花絮 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-graduation-cap"></i> <b> 學生專區 </b> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 新生專欄 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 入學管道 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 跨領域學程 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 實習專區 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 獎學金專區 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 14 14">
+                                    <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z"/>
+                                  </svg>  <b>系所公告</b>  </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 最新消息 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 會議記錄 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 專題演講 </a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"> 法規彙編 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#" target="_blank"><i class="fas fa-globe"></i> <b>	國際交流 </b> </a></li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                              </form>
+                        </ul>
+                        </div> <!-- navbar-collapse.// -->
+                    </div> <!-- container-fluid.// -->
+                    </nav>
+                </div>
+    
+            </div>
+            <div class="row align-items-center" style="padding: 10px;">
+                <div class="col-6">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">主頁</a></li>
+                          <li class="breadcrumb-item"><a href="../../index.html">常見問答</a></li>
+                        </ol>
+                      </nav>
+                </div>
+
+                <div class="col-6" style="text-align: right;">                    
+                </div>
+            </div>
+        </nav>
+
+        <article>
+            <div class="row">
+                <div class="col-12">
+                    <h1>
+                        生命科學院教師有提供給業界技術諮詢與服務項目嗎？
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" style="text-align: left;">
+                    本院整合教師專長提供業界技術諮詣與服務，相關服務諮詢項目如下：
+                    <br>
+                    <br>
+                    <table  id="example" class="display" style="width:100%;">
+                        <thead style="background: rgba(212, 212, 212, 0.493);">
+                            <tr>
+                                <td>學院</td>
+                                <td>系（所）</td>
+                                <td>教師姓名</td>
+                                <td>電子信箱</td>
+                                <td>可提供給業界之技術服務項目</td>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="62">
+                                    生命科學院
+                                </td>
+                                <td rowspan="16">
+                                    食品科學系暨研究所
+                                </td>
+                                <td>
+                                    邱義源
+                                </td>
+                                <td>
+                                    <a href="mailto:president@mail.ncyu.edu.tw">president@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>保健食品研發、微生物發酵食品、輕食堅果殼開發、機能活性成分純鑑定。</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    李益榮
+                                </td>
+                                <td>
+                                    <a href="mailto:Yilee@mail.ncyu.edu.tw">Yilee@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    創新研發管理、產品概念工程、突破性產品開發、複雜製程分析、改善與設計、製程與配方優化
+                                    <br>品質提升與穩定技術、困難技術解決、數據挖掘、六標準差管理、專利迴避、食品單元操作
+                                    <br>分離技術、分離濃縮技術、機能成份富化技術、食品攙假偵測。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    翁義銘
+                                </td>
+                                <td>
+                                    <a href="mailto:ymweng@mail.ncyu.edu.tw">ymweng@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    金屬元素分析、微生物檢測、植化物分析、產品設計開發諮詢。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    徐錫樑
+                                </td>
+                                <td>
+                                    <a href="mailto:shyul@mail.ncyu.edu.tw">shyul@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    脂肪酸分析
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    王璧娟
+                                </td>
+                                <td>
+                                    <a href="mailto:bejen@mail.ncyu.edu.tw">bejen@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    活性成份萃取分析
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    吳思敬
+                                </td>
+                                <td>
+                                    <a href="mailto:cwu@mail.ncyu.edu.tw">Scwu@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    健康食品研發、油脂加工、安全性評估	　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    黃健政
+                                </td>
+                                <td>
+                                    <a href="mailto:hjj@mail.ncyu.edu.tw">hjj@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    蔬果保鮮及加工、水產生鮮處理及加工、水產品藥物殘留ELISA快速檢測 、水產品產銷履歷驗證、HACCP、食品工廠規劃及驗證		　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    左克強
+                                </td>
+                                <td>
+                                    <a href="mailto:timtso@mail.ncyu.edu.tw">timtso@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    營養保健諮詢、營養膳食設計
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    許成光
+                                </td>
+                                <td>
+                                    <a href="mailto:ckhsu@mail.ncyu.edu.tw">ckhsu@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    健康食品研發
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    林淑美
+                                </td>
+                                <td>
+                                    <a href="mailto:smlin00@mail.ncyu.edu.tw">smlin00@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    膳食成份保健功能篩選、評估
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    羅至佑
+                                </td>
+                                <td>
+                                    <a href="mailto:chihyulo@mail.ncyu.edu.tw">chihyulo@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    高效能液相層析質譜分析
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    廖宏儒
+                                </td>
+                                <td>
+                                    <a href="mailto:markliao@mail.ncyu.edu.tw">markliao@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    食品冷凍、穀類及澱粉食品加工、蔬果加工、食品物性、食品加工/食品工程	　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    楊懷文
+                                </td>
+                                <td>
+                                    <a href="mailto:calyang@mail.ncyu.edu.tw">calyang@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    食品熱加工技術、澱粉修飾加工
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    呂英震
+                                </td>
+                                <td>
+                                    <a href="mailto:biolyc@mail.ncyu.edu.tw">biolyc@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    保健產品開發，生產，品管與行銷策略、各種菌種鑑定與功能分析、發酵製程規劃、食品酵素。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    馮淑慧
+                                </td>
+                                <td>
+                                    <a href="mailto:Sophia@mail.ncyu.edu.tw">Sophia@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    食品加工
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    陳志誠
+                                </td>
+                                <td>
+                                    <a href="mailto:jyhcheng@mail.ncyu.edu.tw">jyhcheng@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    藥物殘留電化學快速檢測
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="11">
+                                    水生生物科學系暨研究所
+                                </td>	
+                            </tr>
+                            <tr>
+                                <td>
+                                    黃承輝
+                                </td>
+                                <td>
+                                    <a href="mailto:chuhuang@mail.ncyu.edu.tw">chuhuang@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    水產動物飼料相關技術
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    秦宗顯
+                                </td>
+                                <td>
+                                    <a href="mailto:tschin@mail.ncyu.edu.tw">tschin@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    水產藥物殘留檢測
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    吳淑美
+                                </td>
+                                <td>
+                                    <a href="mailto:sumei@mail.ncyu.edu.tw">sumei@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    環境教育認證相關、生物急毒性檢測
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    賴弘智
+                                </td>
+                                <td>
+                                    <a href="mailto:htlai@mail.ncyu.edu.tw">htlai@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    水質檢測、實驗淡水生物販售	　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    李安進
+                                </td>
+                                <td>
+                                    <a href="mailto:aclee@mail.ncyu.edu.tw">aclee@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    貝類養殖諮詢	　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    陳哲俊
+                                </td>
+                                <td>
+                                    <a href="mailto:chencc@mail.ncyu.edu.tw">chencc@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    產銷履歷驗證、協助輔導歐盟驗證		　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    郭世榮
+                                </td>
+                                <td>
+                                    <a href="mailto:srkuo@mail.ncyu.edu.tw">srkuo@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    魚類分類諮詢		　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    陳淑美
+                                </td>
+                                <td>
+                                    <a href="mailto:smchen@mail.ncyu.edu.tw">smchen@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    微藻分類諮詢		　
+                                </td>
+                            </tr>		　
+                            <tr>
+                                <td>
+                                    郭建賢
+                                </td>
+                                <td>
+                                    <a href="mailto:hagkuo@mail.ncyu.edu.tw">hagkuo@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    魚類分子育種、品系鑑定		　
+                                </td>
+                            </tr>	
+                            <tr>
+                                <td>
+                                    董哲煌
+                                </td>
+                                <td>
+                                    <a href="mailto:davidtung@mail.ncyu.edu.tw">hdavidtung@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    新品種淡海水魚繁殖技術開發SPF餌料生物開發　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="9">
+                                    生物資源學系暨研究所
+                                </td>	
+                            </tr>
+                            <tr>
+                                <td>
+                                    鍾國仁
+                                </td>
+                                <td>
+                                    <a href="mailto:chinese@mail.ncyu.edu.tw">chinese@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    水產養殖經營管理
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    黃啟鐘
+                                </td>
+                                <td>
+                                    <a href="mailto:chuang@mail.ncyu.edu.tw">chuang@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    蟲害診斷與管理
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    許富雄
+                                </td>
+                                <td>
+                                    <a href="mailto:richbear@mail.ncyu.edu.tw">richbear@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    野生動物諮詢與鑑定
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    方引平
+                                </td>
+                                <td>
+                                    <a href="mailto:ypfang@mail.ncyu.edu.tw">ypfang@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    生物物種鑑定
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    劉以誠
+                                </td>
+                                <td>
+                                    <a href="mailto:ycliu@mail.ncyu.edu.tw">ycliu@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    植物鑑定
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    宋國彰
+                                </td>
+                                <td>
+                                    <a href="mailto:mikesong@mail.ncyu.edu.tw">mikesong@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    查驗大麻
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    蔡若詩
+                                </td>
+                                <td>
+                                    <a href="mailto:ross.tsai@mail.ncyu.edu.tw">ross.tsai@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    鳥類物種鑑定
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    陳宣汶
+                                </td>
+                                <td>
+                                    <a href="mailto:chen7@mail.ncyu.edu.tw">chen7@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    生物鑑定
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="12">
+                                    生化科技學系暨研究所
+                                </td>	
+                            </tr>
+                            <tr>
+                                <td>
+                                    陳瑞祥
+                                </td>
+                                <td>
+                                    <a href="mailto:rschen@mail.ncyu.edu.tw">chen7@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    微生物菌種鑑定分析
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    周微茂
+                                </td>
+                                <td>
+                                    <a href="mailto:wmchou@mail.ncyu.edu.tw">wmchou@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    植物生物活性物質保健食品開發
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    蘇建國
+                                </td>
+                                <td>
+                                    <a href="mailto:jgjsu@mail.ncyu.edu.tw">jgjsu@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    藥物對細胞的活性、毒性、抗氧化效應	
+                                </td>
+                            </tr>		
+                            <tr>
+                                <td>
+                                    楊奕玲
+                                </td>
+                                <td>
+                                    <a href="mailto:ylyang@mail.ncyu.edu.tw">ylyang@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    產品對神經退化疾病之效能評估
+                                </td>
+                            </tr>	　
+                            <tr>
+                                <td>
+                                    廖慧芬
+                                </td>
+                                <td>
+                                    <a href="mailto:liaohf@mail.ncyu.edu.tw">liaohf@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    天然物成分分析與生物活性評估
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    翁秉霖
+                                </td>
+                                <td>
+                                    <a href="mailto:peterong@mail.ncyu.edu.tw">peterong@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    蛋白質純化、酵素活性分析
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    林芸薇
+                                </td>
+                                <td>
+                                    <a href="mailto:linyw@mail.ncyu.edu.tw">linyw@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    細胞毒性測試
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    陳政男
+                                </td>
+                                <td>
+                                    <a href="mailto:cnchen@mail.ncyu.edu.tw">cnchen@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    產品開發
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    張心怡
+                                </td>
+                                <td>
+                                    <a href="mailto:hchang@mail.ncyu.edu.tw">hchang@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    生物技術與化妝品或皮膚相關藥品測試
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    吳游源
+                                </td>
+                                <td>
+                                    <a href="mailto:yywo@mail.ncyu.edu.tw">yywo@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    核酸、蛋白分析技術
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    魏佳俐
+                                </td>
+                                <td>
+                                    <a href="mailto:carriewei@mail.ncyu.edu.tw">carriewei@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    舒緩經痛產品開發、腸免疫功能試驗、蛋白質工程研究
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="14">
+                                    微生物免疫與生物藥學系暨研究所
+                                </td>	
+                            </tr>
+                            <tr>
+                                <td>
+                                    翁炳孫
+                                </td>
+                                <td>
+                                    <a href="mailto:bswung@mail.ncyu.edu.tw">bswung@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    以細胞平台檢測：
+                                    <br>細胞毒性及抗發炎功效平台、細胞抗氧化及保護基因表現的分子快篩平台、細胞抗氧化能力檢測平台
+                                    <br>
+                                    <br>以生化指標測定延緩衰老功能評估：
+                                    <br>血漿谷胱甘肽濃度測定、超氧化物歧化酵素(Superoxide dismutase，SOD)活性之測定
+                                    <br>葡萄糖六磷酸去氫酵素(Glucose-6-phosphate dehydrogenase，G6PD)活性測定、過氧化氫酵素(Catalase)活性測定方法
+                                    <br>麩胱甘肽還原酵素(Glutathione reductase，GSH Rd)活性之測定
+                                    <br>及麩胱甘肽過氧化酵素(Glutathione peroxidase，GSH Px) 活性之測定
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    朱紀實
+                                </td>
+                                <td>
+                                    <a href="mailto:cschu@mail.ncyu.edu.tw">cschu@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    檢驗試劑開發、細菌性疫苗開發
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    劉怡文
+                                </td>
+                                <td>
+                                    <a href="mailto:ywlss@mail.ncyu.edu.tw">ywlss@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    膀胱癌細胞毒性試驗、抗膀胱癌藥物測試
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    陳俊憲
+                                </td>
+                                <td>
+                                    <a href="mailto:chench@mail.ncyu.edu.tw">chench@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    大腸癌細胞毒性測試、流式細胞儀分析細胞內活性氧物質(ROS)	　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    金立德
+                                </td>
+                                <td>
+                                    <a href="mailto:litechin@mail.ncyu.edu.tw">litechin@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    生技股上市上櫃　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    陳立耿
+                                </td>
+                                <td>
+                                    <a href="mailto:lgchen@mail.ncyu.edu.tw">lgchen@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    中藥指標成分製備、中藥成分分析、樣品高效液相層析分析、樣品氣相層析質譜儀分析、樣品分析方法開發
+                                    <br>樣品成分分離純化、樣品安定性測試、脂肪酸分析、香水成分分析、大豆異黃酮分析	　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    翁博群
+                                </td>
+                                <td>
+                                    <a href="mailto:brian@mail.ncyu.edu.tw">brian@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    臨場動物血液樣本採集、實驗室血液分析、免疫功能評估、實驗動物模式	　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    謝佳雯
+                                </td>
+                                <td>
+                                    <a href="mailto:cwhsieh@mail.ncyu.edu.tw">cwhsieh@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    微生物及其代謝物生產開發、微生物發酵量產、細胞培養反應器放大、細胞/微生物生產蛋白質及純化	　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    黃襟錦
+                                </td>
+                                <td>
+                                    <a href="mailto:yuvun@mail.ncyu.edu.tw">yuvun@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    凝血活性分析	　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    吳進益
+                                </td>
+                                <td>
+                                    <a href="mailto:jywu@mail.ncyu.edu.tw">jywu@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    成分分離及結構鑑定、天然物萃取分離及活性分析、天然精油製作及成分鑑定、化妝品原料建立與協助產品開發		　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    莊晶晶
+                                </td>
+                                <td>
+                                    <a href="mailto:yihyeh@mail.ncyu.edu.tw">yihyeh@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    白血病細胞毒性測試，白血球細胞分離技術，免疫功能分析		　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    蔡宗杰
+                                </td>
+                                <td>
+                                    <a href="mailto:tsaitc@mail.ncyu.edu.tw">tsaitc@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    微生物生產蛋白質及純化、基因選殖與構築	　	　
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    王紹鴻
+                                </td>
+                                <td>
+                                    <a href="mailto:shwang@mail.ncyu.edu.tw">shwang@mail.ncyu.edu.tw</a>
+                                </td>
+                                <td>
+                                    微生物鑑定-定序分析法、培養鑑定法　	　
+                                </td>
+                            </tr>  	
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-1 g-4" style="text-align: center; padding-top: 40px;">
+                <div class="col">
+                    <div class="card h-100 w-50 mx-auto">
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" style="text-align: center; padding-top: 20px;">
+                        <a href="#" >返回頂部</a>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+        
+        <footer>
+            <div class="row align-items-center">
+                <div class="col-12">
+                    國立嘉義大學　版權所有　Copyright © 2017 All Rights Reserved.
+
+                    <br>國立嘉義大學生命科學院食品科學系
+
+                    <br><i class="fas fa-map-marker-alt"></i> 地址：嘉義市學府路300號
+
+                    <br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 18 18">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg> 電話：05-2717591~2 &nbsp; <i class="fas fa-fax"></i> 傳真：05-2717596
+                    
+                    <br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 18 18">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                    </svg>&nbsp;歡迎來信 : fst@mail.ncyu.edu.tw
+                </div>
+            </div>
+        </footer>
+        
+
+
+
+    </div>
+</body>
+</html>
