@@ -16,99 +16,94 @@
 <body>
     <div class="container-fluid">
         <header>
-            <div class="row align-items-center">
-                <div class = "col-8">
-                    <img src="../../img/校徽01.png" class="img-thumbnail" alt="..." style="width: auto; max-height: 80px;">
-                </div>
-                <div class = "col-1">
-                    返回首頁
-                </div>
-                <div class = "col-1">
-                    網站導覽
-                </div>
-                <div class = "col-1">
-                    常見問答
-                </div>
-                <div class = "col-1">
-                    意見信箱
-                </div>
-            </div>
-        </header>
-
-        <nav>
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-lg navbar-dar" style=" background-color : #F4F6B0">
+          <div class="row gx-4 align-items-center">
+            <div class = "col-7">
+                <a href="https://www.ncyu.edu.tw/newsite/index.aspx" target="_blank"><img src="../../img/校徽01.png" class="img-thumbnail" alt="..." style="width: auto; max-height: 80px; border: 0px;"></a>
+              </div>
+              <div class = "col returnHome">
+                  <a class="btn " href="../../home_page.html" role="button" style="border: 0px;">返回首頁</a>
+              </div>
+              <div class = "col webGuide">
+                  <a class="btn " href="../../Nav/Map/index.html" role="button" style="border: 0px;">網站導覽</a>
+              </div>
+              <div class = "col commentQA">
+                  <a class="btn " href="../../Nav/QandA/index.html" role="button" style="border: 0px;">常見問答</a>
+              </div>
+              <div class = "col comment_mail">
+                  <a class="btn " href="../../Nav/Mail/index.html" role="button" style="border: 0px;">意見信箱</a>
+              </div>
+          </div>
+      </header>
+  
+      <nav>
+          <div class="row">
+              <div class="col-12">
+                  <nav class="navbar navbar-expand-lg navbar-dar" style=" background-color : #F4F6B0">
                       <div class="container-fluid">
-                        <a class="navbar-brand" href="" style="color: #090909; font-size: larger;"><b>嘉義大學食品科學系</b></a>
-                        
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="main_nav">
-                        <div class="collapse navbar-collapse" id="main_nav">
-                          <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16 ">
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                                  </svg>  <b id="aboutDepartment">關於食科</b> </a>
-
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../../About/index.html"> 系所簡介 </a></li>
-                                    <li><a class="dropdown-item" href="../../About/Teacher/index.html"> 師資陣容 </a></li>
-                                    <li><a class="dropdown-item" href="../../About/Honor Roll/index.html"> 榮譽榜 </a></li>
-                                    <li><a class="dropdown-item" href="../../About/Subject/index.html"> 必修科目冊 </a></li>
-                                    <li><a class="dropdown-item" href="https://www.facebook.com/NCYU.SA.DFS/"> 系學會 </a></li>
-                                    <li><a class="dropdown-item" href="../../About/Alumni Center/index.html"> 系友會 </a></li>
-                                    <li><a class="dropdown-item" href="../../About/Event/index.html"> 活動花絮 </a></li>
-                                </ul>
-                            </li>
-                            
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-graduation-cap"></i> <b> 學生專區 </b> </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#" target="_blank"> 新生專欄 </a></li>
-                                    <li><a class="dropdown-item" href="#" target="_blank"> 入學管道 </a></li>
-                                    <li><a class="dropdown-item" href="#" target="_blank"> 跨領域學程 </a></li>
-                                    <li><a class="dropdown-item" href="#" target="_blank"> 實習專區 </a></li>
-                                    <li><a class="dropdown-item" href="#" target="_blank"> 獎學金專區 </a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 14 14">
-                                    <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z"/>
-                                  </svg>  <b>系所公告</b>  </a>
-
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#" target="_blank"> 最新消息 </a></li>
-                                    <li><a class="dropdown-item" href="#" target="_blank"> 會議記錄 </a></li>
-                                    <li><a class="dropdown-item" href="#" target="_blank"> 專題演講 </a></li>
-                                    <li><a class="dropdown-item" href="#" target="_blank"> 法規彙編 </a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#" target="_blank"><i class="fas fa-globe"></i> <b>	國際交流 </b> </a></li>
-                        </ul>
-                        
-                        <ul class="navbar-nav ms-auto">
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                              </form>
-                        </ul>
-                        </div> <!-- navbar-collapse.// -->
-                    </div> <!-- container-fluid.// -->
-                    </nav>
-                </div>
-    
-            </div>
+                          <a class="navbar-brand" href="../../home_page.html"><b>嘉義大學食品科學系</b></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="main_nav">
+                      <ul class="navbar-nav">
+                          <li class="nav-item dropdown">
+                              <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16 ">
+                                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                </svg>  <b id="aboutDepartment">關於食科</b> </a>
+  
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="../../About/index.html" target="_blank"> 系所簡介 </a></li>
+                                  <li><a class="dropdown-item" href="../../About/Teacher/index.html" target="_blank"> 師資陣容 </a></li>
+                                  <li><a class="dropdown-item" href="../../About/Honor Roll/index.html" target="_blank"> 榮譽榜 </a></li>
+                                  <li><a class="dropdown-item" href="../../About/Subject/index.html" target="_blank"> 必修科目冊 </a></li>
+                                  <li><a class="dropdown-item" href="https://www.facebook.com/NCYU.SA.DFS/" target="_blank"> 系學會 </a></li>
+                                  <li><a class="dropdown-item" href="../../About/Alumni Center/index.html" target="_blank"> 系友會 </a></li>
+                                  <li><a class="dropdown-item" href="../../About/Event/index.html" target="_blank" >活動花絮 </a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-graduation-cap"></i> <b> 學生專區 </b> </a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="../../student/freshman.html" target="_blank"> 新生專欄 </a></li>
+                                  <li><a class="dropdown-item" href="../../student/admission.html" target="_blank"> 入學管道 </a></li>
+                                  <li><a class="dropdown-item" href="../../student/interdisciplinary.html" target="_blank"> 跨領域學程 </a></li>
+                                  <li><a class="dropdown-item" href="../../student/internship.html" target="_blank"> 實習專區 </a></li>
+                                  <li><a class="dropdown-item" href="../../student/scholarship.html" target="_blank"> 獎學金專區 </a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 14 14">
+                                  <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z"/>
+                                </svg>  <b>系所公告</b>  </a>
+  
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="../../Announcement/News/index.html" target="_blank"> 最新消息 </a></li>
+                                  <li><a class="dropdown-item" href="../../Announcement/Meeting_Record/index.html" target="_blank"> 會議記錄 </a></li>
+                                  <li><a class="dropdown-item" href="../../Announcement/Speech/index.html" target="_blank"> 專題演講 </a></li>
+                                  <li><a class="dropdown-item" href="../../Announcement/Law/index.html" target="_blank"> 法規彙編 </a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item"><a class="nav-link" href="../../International/Index.html" target="_blank"><i class="fas fa-globe"></i> <b>	國際交流 </b> </a></li>
+                      </ul>
+                      <ul class="navbar-nav ms-auto">
+                          <form class="d-flex">
+                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                      </ul>
+                      </div> <!-- navbar-collapse.// -->
+                  </div> <!-- container-fluid.// -->
+                  </nav>
+              </div>
+  
+          </div>
             <div class="row align-items-center" style="padding: 10px;">
                 <div class="col-6">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="#">主頁</a></li>
+                          <li class="breadcrumb-item"><a href="../../home_page.html">主頁</a></li>
                           <li class="breadcrumb-item">系所公告</li>
                           <li class="breadcrumb-item active" aria-current="page">最新消息</li>
                         </ol>

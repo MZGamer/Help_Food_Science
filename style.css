@@ -24,7 +24,10 @@
     padding-left: 15px;
     border-radius: 2px;
     width: 60%;
+    
 }
+
+
 table{
     margin-left:auto; 
     margin-right:auto;
@@ -65,17 +68,11 @@ footer{
 tr:nth-child(even) {
     background-color: rgba(255, 242, 100, 0.528);
 }
-table td a {
-    color: black;
-    text-decoration: none;
-}
-.navbar-brand a {
+.navbar-brand {
     color: black;
 }
 
-table td a:hover {
-    color: rgb(168, 168, 168);
-}
+
 
 a {
     text-decoration: none;
@@ -84,6 +81,19 @@ a {
 article {
     text-align: center;
     padding: 50px;
+}
+
+.returnHome a{
+    color: rgb(75, 125, 250);
+}
+.webGuide a{
+    color: rgb(75, 125, 250);
+}
+.commentQA a{
+    color: rgb(75, 125, 250);
+}
+.comment_mail a{
+    color: rgb(75, 125, 250);
 }
 
 .returnHome a:hover{
